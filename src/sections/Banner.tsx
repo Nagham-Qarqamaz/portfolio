@@ -10,6 +10,10 @@ import SlideLeft from "../components/animation/SlideLeft";
 import SlideRight from "../components/animation/SlideRight";
 import Container from "../components/Container";
 
+function loadImage(src: string) {
+	return src;
+}
+
 const Banner = () => {
 	return (
 		<div className="bg-[url('/images/cover.jpg')] bg-cover">
@@ -98,7 +102,7 @@ const Banner = () => {
 									<FadeIn>
 										<img
 											className="mb-4 h-[13rem] rounded-[30px]"
-											src="/images/sketch.png"
+											src={loadImage("images/sketch.png")}
 										/>
 									</FadeIn>
 									<h1 className="text-[3rem] font-bold">

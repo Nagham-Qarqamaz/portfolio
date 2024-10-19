@@ -47,12 +47,13 @@ function Languages() {
 			</SlidUp>
 
 			<SlidUp>
-				<video
-					src="/videos/languages.mp4"
-					width="600"
-					controls
-					className="mx-auto mt-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105"
-				></video>
+				<iframe
+					className="w-full h-[20rem] rounded-xl"
+					src="https://www.youtube.com/embed/1NUOey6g7pA?si=MM3sxyZ_sjnbClzs"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerPolicy="strict-origin-when-cross-origin"
+					allowFullScreen
+				/>
 			</SlidUp>
 		</Section>
 	);

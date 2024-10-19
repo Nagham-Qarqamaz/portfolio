@@ -22,12 +22,12 @@ function Projects() {
 				/>
 				<ProjectCard
 					name="E-buy"
-					description=""
+					description="This is a Laravel project where I was primarily responsible for the frontend development using Blade templates, along with handling some other basic tasks."
 					videoURL="https://www.youtube.com/embed/1H7muNMIKEU?si=Ys5hEQ9WCF4IH6Ox"
 				/>
 				<ProjectCard
 					name="IDB"
-					description=""
+					description="Developed a full-stack project using Laravel for both backend and frontend, with Blade for the UI and a dashboard powered by Laravel Nova."
 					videoURL="https://www.youtube.com/embed/RqxRiu7AEio?si=S07Fa9rCQsaNyxrb"
 				/>
 			</div>

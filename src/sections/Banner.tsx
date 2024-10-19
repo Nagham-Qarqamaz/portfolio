@@ -9,10 +9,7 @@ import FadeIn from "../components/animation/FadeIn";
 import SlideLeft from "../components/animation/SlideLeft";
 import SlideRight from "../components/animation/SlideRight";
 import Container from "../components/Container";
-
-function loadImage(src: string) {
-	return src;
-}
+import { loadImage } from "../utils/loadImage";
 
 const Banner = () => {
 	return (

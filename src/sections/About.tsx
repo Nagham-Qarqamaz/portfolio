@@ -2,6 +2,7 @@ import Typewriter from "typewriter-effect";
 import useShow from "../hooks/useShow";
 import FadeIn from "../components/animation/FadeIn";
 import Section from "../components/Section";
+import { loadImage } from "../utils/loadImage";
 
 function About() {
 	const [ref, hasShown] = useShow({ threshold: 0.1 });
@@ -54,7 +55,7 @@ function About() {
 				<FadeIn>
 					<img
 						className="max-h-[16rem] min-w-[16rem] rounded-[30px]"
-						src="/images/on-laptop.png"
+						src={loadImage("images/on-laptop.png")}
 					/>
 				</FadeIn>
 			</div>

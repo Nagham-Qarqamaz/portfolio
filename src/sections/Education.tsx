@@ -1,17 +1,18 @@
 import ImageCard from "../components/ImageCard";
 import Section from "../components/Section";
 import SimpleCard from "../components/SimpleCard";
+import { loadImage } from "../utils/loadImage";
 
 const Education = () => (
 	<Section title="Education">
 		<div className="flex justify-center items-center gap-12">
 			<div className="flex gap-4">
 				<ImageCard
-					src="/certificates/Graduation Certificate.jpg"
+					src={loadImage("certificates/Graduation Certificate.jpg")}
 					title="University Certificate"
 				/>
 				<ImageCard
-					src="/certificates/Graduation Certificate.jpg"
+					src={loadImage("certificates/Graduation Certificate.jpg")}
 					title="Graduation Certificate"
 				/>
 			</div>

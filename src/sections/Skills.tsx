@@ -17,7 +17,12 @@ const Skills: React.FC = () => (
 						<SkillCategory
 							title="3D Rendering"
 							description="Expertise in creating interactive 3D graphics using various technologies."
-							skills={["OpenGL", "WebGL", "Three.js"]}
+							skills={[
+								"OpenGL",
+								"WebGL",
+								"Three.js",
+								"Babylon.js",
+							]}
 							hoverEffect={false}
 						/>
 					</div>

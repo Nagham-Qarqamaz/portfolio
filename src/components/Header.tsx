@@ -44,7 +44,7 @@ const navItems = [
 	{ href: "#projects", text: "Projects" },
 	{ href: "#education", text: "Education" },
 	{ href: "#certificates", text: "Certificates" },
-	{ href: "#achievements", text: "Achievements" },
+	// { href: "#achievements", text: "Achievements" },
 	{ href: "#languages", text: "Languages" },
 	{ href: "#contact", text: "Contact" },
 ];

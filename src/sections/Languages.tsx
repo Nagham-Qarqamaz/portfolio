@@ -48,7 +48,7 @@ function Languages() {
 
 			<SlidUp>
 				<iframe
-					className="w-full h-[20rem] rounded-xl"
+					className="w-[40rem] h-[20rem] rounded-xl mx-auto mt-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105"
 					src="https://www.youtube.com/embed/1NUOey6g7pA?si=MM3sxyZ_sjnbClzs"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerPolicy="strict-origin-when-cross-origin"

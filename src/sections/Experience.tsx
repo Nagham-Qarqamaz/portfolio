@@ -11,7 +11,7 @@ const Experience = () => (
 				{/* Freelance Web Developer - Eyes360 */}
 				<div className="relative">
 					<FadeIn>
-						<div className="absolute top-20 left-full w-48 h-32 border-t-4 border-r-4 border-pumpkin-800 border-dashed rounded-tr-[40px]" />
+						<div className="absolute top-20 left-full w-[75%] h-32 border-t-4 border-r-4 border-pumpkin-800 border-dashed rounded-tr-[40px]" />
 					</FadeIn>
 					<SlideRight>
 						<SimpleCard className="p-8">
@@ -85,7 +85,7 @@ const Experience = () => (
 				{/* Front-End Developer - Divcodes */}
 				<div className="relative">
 					<FadeIn>
-						<div className="absolute right-full top-24 w-48 h-32 border-t-4 border-l-4 border-pumpkin-800 border-dashed rounded-tl-[40px]" />
+						<div className="absolute right-full top-24 w-[75%] h-32 border-t-4 border-l-4 border-pumpkin-800 border-dashed rounded-tl-[40px]" />
 					</FadeIn>
 					<SlideLeft>
 						<SimpleCard className="p-8">
@@ -121,7 +121,7 @@ const Experience = () => (
 				{/* ICPC Contestant and Coach */}
 				<div className="relative">
 					<FadeIn>
-						<div className="absolute right-full top-0 w-48 h-32 border-b-4 border-l-4 border-pumpkin-800 border-dashed rounded-bl-[40px]" />
+						<div className="absolute right-full top-0 w-[75%] h-32 border-b-4 border-l-4 border-pumpkin-800 border-dashed rounded-bl-[40px]" />
 					</FadeIn>
 					<SlideLeft>
 						<SimpleCard className="p-8">

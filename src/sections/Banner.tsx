@@ -9,6 +9,7 @@ import FadeIn from "../components/animation/FadeIn";
 import SlideLeft from "../components/animation/SlideLeft";
 import SlideRight from "../components/animation/SlideRight";
 import Container from "../components/Container";
+import LazyImage from "../components/LazyImage";
 import { loadImage } from "../utils/loadImage";
 
 const Banner = () => {
@@ -97,7 +98,7 @@ const Banner = () => {
 							<SlideLeft>
 								<div className="flex flex-col items-center justify-center text-white">
 									<FadeIn>
-										<img
+										<LazyImage
 											className="mb-4 h-[13rem] rounded-[30px]"
 											src={loadImage("images/sketch.png")}
 										/>
@@ -108,13 +109,13 @@ const Banner = () => {
 									<p className="text-[1.4rem]">
 										Software Engineer & Full-Stack Developer
 									</p>
-									<a
+									{/* <a
 										href="/resume/Nagham Qarqamaz Resume.pdf"
 										download="Nagham Qarqamaz Resume.pdf"
 										className="mt-6 text-2xl bg-pumpkin-600 hover:bg-pumpkin-700 px-4 py-2 rounded transform hover:scale-105 transition-transform duration-300 inline-block"
 									>
 										Download Resume
-									</a>
+									</a> */}
 								</div>
 							</SlideLeft>
 						</div>

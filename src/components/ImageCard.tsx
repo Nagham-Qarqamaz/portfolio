@@ -2,6 +2,7 @@ import { useState } from "react";
 import SlidUp from "./animation/SlideUp";
 import SimpleCard from "./SimpleCard";
 import Modal from "./Modal";
+import LazyImage from "./LazyImage";
 
 interface ImageCardProps {
 	src: string;
@@ -31,8 +32,8 @@ function ImageCard({ src, title, description }: ImageCardProps) {
 					>
 						full-size image
 					</a>
-					<img
-						className="max-w-full max-h-[95%] object-contain"
+					<LazyImage
+						className="max-w-full h-[95%] max-h-[95%] object-contain"
 						src={src}
 						alt={title}
 					/>
@@ -43,7 +44,7 @@ function ImageCard({ src, title, description }: ImageCardProps) {
 					<SimpleCard>
 						<div className="font-bold text-base">{title}</div>
 						<div>{description}</div>
-						<img
+						<LazyImage
 							className="w-full h-56 object-cover mt-4 rounded-lg"
 							src={src}
 							alt={title}

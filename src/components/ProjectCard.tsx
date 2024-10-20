@@ -17,7 +17,7 @@ function ProjectCard({ name, description, videoURL }: ProjectCardProps) {
 					</p>
 				</div>
 				<iframe
-					className="w-full h-[20rem] rounded-xl"
+					className="w-full h-[19rem] rounded-xl"
 					src={videoURL}
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerPolicy="strict-origin-when-cross-origin"

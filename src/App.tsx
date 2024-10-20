@@ -6,7 +6,7 @@ import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 import Education from "./sections/Education";
 import Certificates from "./sections/Certificates";
-import Achievements from "./sections/Achievements";
+// import Achievements from "./sections/Achievements";
 import Languages from "./sections/Languages";
 import Container from "./components/Container";
 
@@ -36,9 +36,9 @@ const App = () => {
 				<section id="certificates">
 					<Certificates />
 				</section>
-				<section id="achievements">
+				{/* <section id="achievements">
 					<Achievements />
-				</section>
+				</section> */}
 				<section id="languages">
 					<Languages />
 				</section>

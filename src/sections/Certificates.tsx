@@ -7,7 +7,7 @@ function Certificates() {
 	return (
 		<Section glow={false} title="Certificates">
 			<FadeIn>
-				<div className="shadow-pumpkin p-8 rounded-[3rem]">
+				<div className="shadow-pumpkin overflow-hidden p-8 rounded-[3rem]">
 					<div>
 						<div className="text-3xl font-semibold mb-6">
 							Al-Basel Certificates for Academic Excellence
@@ -52,7 +52,7 @@ function Certificates() {
 				</div>
 			</FadeIn>
 			<FadeIn>
-				<div className="shadow-pumpkin p-8 rounded-[3rem] mt-16">
+				<div className="shadow-pumpkin overflow-hidden p-8 rounded-[3rem] mt-16">
 					<div>
 						<div className="text-3xl font-semibold mb-6">
 							International Collegiate Programming Contest

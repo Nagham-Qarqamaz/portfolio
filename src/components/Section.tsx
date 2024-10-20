@@ -14,7 +14,10 @@ function Section({ title, children, glow = true }: SectionProps) {
 			<FadeIn>
 				<Title text={title} />
 				<div
-					className={`${glow && "shadow-pumpkin p-8 rounded-[3rem]"}`}
+					className={`${
+						glow &&
+						"overflow-hidden shadow-pumpkin p-8 rounded-[3rem]"
+					}`}
 				>
 					{children}
 				</div>

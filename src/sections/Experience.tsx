@@ -6,12 +6,12 @@ import SimpleCard from "../components/SimpleCard";
 
 const Experience = () => (
 	<Section title="Experience">
-		<div className="flex justify-between text-left">
+		<div className="flex gap-8 justify-between text-left">
 			<div className="space-y-[12rem]">
 				{/* Freelance Web Developer - Eyes360 */}
 				<div className="relative">
 					<FadeIn>
-						<div className="absolute top-20 left-full w-[75%] h-32 border-t-4 border-r-4 border-pumpkin-800 border-dashed rounded-tr-[40px]" />
+						<div className="absolute top-20 left-full w-[75%] h-32 border-t-4 border-r-4 border-tamarillo border-dashed rounded-tr-[40px]" />
 					</FadeIn>
 					<SlideRight>
 						<SimpleCard className="p-8">
@@ -53,7 +53,7 @@ const Experience = () => (
 								</span>
 							</div>
 							<p className="italic text-pumpkin-100">
-								Aratech, Dubai, UAE
+								Aratech, Dubai, UAE (Remote)
 							</p>
 							<ul className="list-disc list-inside mt-2 space-y-1">
 								<li className="custom-bullet">
@@ -85,7 +85,7 @@ const Experience = () => (
 				{/* Front-End Developer - Divcodes */}
 				<div className="relative">
 					<FadeIn>
-						<div className="absolute right-full top-24 w-[75%] h-32 border-t-4 border-l-4 border-pumpkin-800 border-dashed rounded-tl-[40px]" />
+						<div className="absolute right-full top-44 lg:top-24 w-[75%] h-32 border-t-4 border-l-4 border-tamarillo border-dashed rounded-tl-[40px]" />
 					</FadeIn>
 					<SlideLeft>
 						<SimpleCard className="p-8">
@@ -98,7 +98,7 @@ const Experience = () => (
 								</span>
 							</div>
 							<p className="italic text-pumpkin-100">
-								Divcodes, Beirut, Lebanon
+								Divcodes, Beirut, Lebanon (Remote)
 							</p>
 							<ul className="list-disc list-inside mt-2 space-y-1">
 								<li className="custom-bullet">
@@ -121,7 +121,7 @@ const Experience = () => (
 				{/* ICPC Contestant and Coach */}
 				<div className="relative">
 					<FadeIn>
-						<div className="absolute right-full top-0 w-[75%] h-32 border-b-4 border-l-4 border-pumpkin-800 border-dashed rounded-bl-[40px]" />
+						<div className="absolute right-full top-20 lg:top-0 w-[75%] h-32 border-b-4 border-l-4 border-tamarillo border-dashed rounded-bl-[40px]" />
 					</FadeIn>
 					<SlideLeft>
 						<SimpleCard className="p-8">

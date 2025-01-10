@@ -16,7 +16,7 @@ function Section({ title, children, glow = true }: SectionProps) {
 				<div
 					className={`${
 						glow &&
-						"overflow-hidden shadow-pumpkin p-8 rounded-[3rem]"
+						"overflow-hidden shadow-pumpkin p-8 rounded-[3rem] bg-shark-900"
 					}`}
 				>
 					{children}

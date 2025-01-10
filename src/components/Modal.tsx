@@ -15,7 +15,7 @@ function Modal({ children, isOpen, close }: ModalProps) {
 			onClick={close}
 		>
 			<div
-				className="bg-dark-300 p-8 rounded-2xl relative"
+				className="bg-shark-500 p-8 rounded-2xl relative"
 				onClick={(e) => {
 					e.stopPropagation();
 				}}

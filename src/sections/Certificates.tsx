@@ -7,7 +7,7 @@ function Certificates() {
 	return (
 		<Section glow={false} title="Certificates">
 			<FadeIn>
-				<div className="shadow-pumpkin overflow-hidden p-8 rounded-[3rem]">
+				<div className="shadow-pumpkin bg-shark-900 overflow-hidden p-8 rounded-[3rem]">
 					<div>
 						<div className="text-3xl font-semibold mb-6">
 							Al-Basel Certificates for Academic Excellence
@@ -52,15 +52,15 @@ function Certificates() {
 				</div>
 			</FadeIn>
 			<FadeIn>
-				<div className="shadow-pumpkin overflow-hidden p-8 rounded-[3rem] mt-16">
+				<div className="shadow-pumpkin bg-shark-900 overflow-hidden p-8 rounded-[3rem] mt-16">
 					<div>
 						<div className="text-3xl font-semibold mb-6">
 							International Collegiate Programming Contest
 							Certificates
 						</div>
-						<div className="flex flex-col">
+						<div className="flex flex-col gap-12">
 							<div className="flex justify-between gap-4">
-								<div className="bg-dark-800 p-8 rounded-[3rem]">
+								<div className="bg-shark-700 overflow-hidden p-8 rounded-[3rem]">
 									<div className="text-lg font-semibold mb-6">
 										The 2018 International Collegiate
 										Programming Contest
@@ -81,7 +81,7 @@ function Certificates() {
 										/>
 									</div>
 								</div>
-								<div className="bg-dark-800 p-8 rounded-[3rem]">
+								<div className="bg-shark-700 overflow-hidden p-8 rounded-[3rem]">
 									<div className="text-lg font-semibold mb-6">
 										The 2019 International Collegiate
 										Programming Contest
@@ -103,7 +103,7 @@ function Certificates() {
 									</div>
 								</div>
 							</div>
-							<div className="bg-dark-800 p-8 rounded-[3rem]">
+							<div className="bg-shark-700 overflow-hidden p-8 rounded-[3rem]">
 								<div className="text-lg font-semibold mb-6">
 									The 2020 Africa and Arab Collegiate
 									Programming Contest for GIRLS
@@ -145,7 +145,7 @@ function Certificates() {
 									/>
 								</div>
 							</div>
-							<div className="bg-dark-800 p-8 rounded-[3rem]">
+							<div className="bg-shark-700 overflow-hidden p-8 rounded-[3rem]">
 								<div className="text-lg font-semibold mb-6">
 									The 2022 International Collegiate
 									Programming Contest

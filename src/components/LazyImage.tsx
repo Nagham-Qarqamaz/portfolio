@@ -25,7 +25,6 @@ const LazyImage = ({ src, className, alt = "image" }: LazyImageProps) => {
 			<img
 				className={className}
 				src={src}
-				loading="lazy"
 				alt={alt}
 				style={{ display: isLoaded ? "block" : "none" }}
 				onLoad={() => setIsLoaded(true)}

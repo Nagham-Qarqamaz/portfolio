@@ -7,7 +7,7 @@ function Location() {
 			version="1.1"
 			id="Layer_1"
 			viewBox="0 0 512 512"
-			enable-background="new 0 0 512 512"
+			enableBackground="new 0 0 512 512"
 		>
 			<path
 				d="M256,0C149.3,0,64,85.3,64,192c0,36.9,11,65.4,30.1,94.3l141.7,215v0c4.3,6.5,11.7,10.7,20.2,10.7c8.5,0,16-4.3,20.2-10.7

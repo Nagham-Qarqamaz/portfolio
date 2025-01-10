@@ -112,7 +112,7 @@ function Sphere() {
 		<FadeIn>
 			<div
 				ref={mountRef}
-				className="w-[12rem] h-[12rem] cursor-pointer"
+				className="w-[10rem] h-[10rem] sm:w-[12rem] sm:h-[12rem] cursor-pointer"
 			/>
 		</FadeIn>
 	);

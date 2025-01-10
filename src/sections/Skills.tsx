@@ -9,9 +9,9 @@ const Skills: React.FC = () => (
 	<Section title="Skills">
 		<div className="flex flex-col items-center mb-12 space-y-12">
 			<FadeIn>
-				<SimpleCard className="px-8">
-					<div className="flex items-center space-x-8">
-						<div className="relative w-48 h-48">
+				<SimpleCard className="sm:px-8">
+					<div className="flex flex-col sm:flex-row items-center sm:space-x-8">
+						<div className="relative w-40 h-40 sm:w-48 sm:h-48">
 							<Sphere />
 						</div>
 						<SkillCategory
@@ -29,7 +29,7 @@ const Skills: React.FC = () => (
 				</SimpleCard>
 			</FadeIn>
 
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 				<SkillCategory
 					title="Frontend & UI Development"
 					description="Creating intuitive and responsive user interfaces."
@@ -103,11 +103,11 @@ const SkillCategory: React.FC<SkillCategoryProps> = ({
 				<p className="mb-4 text-white">{description}</p>
 				<div className="flex flex-wrap gap-2">
 					{skills.map((skill, index) => (
-						<div className="flex-grow">
+						<div key={index} className="flex-grow">
 							<FadeIn>
 								<div
 									key={index}
-									className="text-center text-pumpkin-700 bg-white rounded-xl p-[6px] font-[800]"
+									className="text-center text-tamarillo-800 bg-white rounded-xl p-[6px] font-[800]"
 								>
 									{skill}
 								</div>

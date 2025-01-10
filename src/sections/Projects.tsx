@@ -23,8 +23,8 @@ function Projects() {
 					onClick={() => setOrderBy("Latest")}
 					className={`px-4 py-2 ${
 						orderBy === "Latest"
-							? "bg-pumpkin-500"
-							: "bg-pumpkin-800"
+							? "bg-pumpkin-700"
+							: "bg-pumpkin-900"
 					} rounded`}
 				>
 					Latest
@@ -33,8 +33,8 @@ function Projects() {
 					onClick={() => setOrderBy("Most Interesting")}
 					className={`px-4 py-2 ${
 						orderBy === "Most Interesting"
-							? "bg-pumpkin-500"
-							: "bg-pumpkin-800"
+							? "bg-pumpkin-700"
+							: "bg-pumpkin-900"
 					} rounded`}
 				>
 					Most Interesting
@@ -43,8 +43,8 @@ function Projects() {
 					onClick={() => setOrderBy("Oldest")}
 					className={`px-4 py-2 ${
 						orderBy === "Oldest"
-							? "bg-pumpkin-500"
-							: "bg-pumpkin-800"
+							? "bg-pumpkin-700"
+							: "bg-pumpkin-900"
 					} rounded`}
 				>
 					Oldest

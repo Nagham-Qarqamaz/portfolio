@@ -10,10 +10,10 @@ function About() {
 
 	return (
 		<Section title="About Me">
-			<div className="flex justify-between items-center gap-12">
+			<div className="flex flex-col md:flex-row justify-between items-center gap-12">
 				<div
 					ref={ref}
-					className="flex-grow self-start text-[1rem] mx-auto text-left h-[18rem]"
+					className="order-1 md:order-0 flex-grow self-start text-[1rem] mx-auto text-left md:h-[34rem] lg:h-[24rem] xl:h-[18rem]"
 				>
 					{hasShown && (
 						<Typewriter
@@ -53,12 +53,14 @@ function About() {
 						/>
 					)}
 				</div>
-				<FadeIn>
-					<LazyImage
-						className="max-h-[16rem] min-w-[16rem] rounded-[30px]"
-						src={loadImage("images/on-laptop.png")}
-					/>
-				</FadeIn>
+				<div className="order-0 md:order-1">
+					<FadeIn>
+						<LazyImage
+							className="max-h-[16rem] md:min-w-[16rem] rounded-[30px] brightness-[0.9]"
+							src={loadImage("images/on-laptop.png")}
+						/>
+					</FadeIn>
+				</div>
 			</div>
 		</Section>
 	);

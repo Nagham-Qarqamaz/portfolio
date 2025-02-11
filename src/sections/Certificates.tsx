@@ -13,7 +13,7 @@ function Certificates() {
 				<div
 					className={`${
 						theme == "light"
-							? ""
+							? "text-primary-900"
 							: "shadow-pumpkin bg-secondary-900"
 					} overflow-hidden p-8 rounded-[3rem]`}
 				>
@@ -34,7 +34,7 @@ function Certificates() {
 				<div
 					className={`${
 						theme == "light"
-							? ""
+							? "text-primary-900"
 							: "shadow-pumpkin bg-secondary-900"
 					} overflow-hidden p-8 rounded-[3rem] mt-16`}
 				>

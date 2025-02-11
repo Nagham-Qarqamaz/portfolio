@@ -10,6 +10,32 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+:root {
+    --primary-50: #e23239;
+    --primary-100: #e0272e;
+    --primary-200: #d01e25;
+    --primary-300: #ba1a21;
+    --primary-400: #a3171d;
+    --primary-500: #8d1419;
+    --primary-600: #801217;
+    --primary-700: #721014;
+    --primary-800: #650e12;
+    --primary-900: #570c0f;
+    --primary-950: #510b0e;
+
+    --secondary-50: #62666f;
+    --secondary-100: #5c6068;
+    --secondary-200: #50535b;
+    --secondary-300: #44474d;
+    --secondary-400: #383a40;
+    --secondary-500: #2c2e32;
+    --secondary-600: #25272a;
+    --secondary-700: #1e1f22;
+    --secondary-800: #17181a;
+    --secondary-900: #0f1011;
+    --secondary-950: #0c0c0d;
+}
+
 body{
     font-family: 'Nunito';
 }

@@ -3,11 +3,11 @@ import { loadImage } from "../utils/loadImage";
 
 interface LazyImageProps {
 	src: string;
-	className: string;
+	className?: string;
 	alt?: string;
 }
 
-const LazyImage = ({ src, className, alt = "image" }: LazyImageProps) => {
+const LazyImage = ({ src, className = "", alt = "image" }: LazyImageProps) => {
 	const [isLoaded, setIsLoaded] = useState(false);
 
 	return (

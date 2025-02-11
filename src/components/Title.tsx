@@ -1,8 +1,24 @@
+import { useTheme } from "../contexts/ThemeContext";
+
 function Title({ text }: { text: string }) {
+	const { theme } = useTheme();
+
 	return (
-		<h2 className="w-fit text-[3.2rem] font-bold mb-6 text-pumpkin bg-gradient-to-r from-pumpkin-300 via-pumpkin-500 to-pumpkin-700 text-transparent bg-clip-text">
-			{text}
-		</h2>
+		<div
+			className={`mb-4 ${
+				theme == "light" ? "w-full flex justify-center" : ""
+			}`}
+		>
+			<h2
+				className={`w-fit text-[2.5rem] sm:text-[5rem] font-bold bg-gradient-to-r text-transparent bg-clip-text ${
+					theme == "light"
+						? "from-pumpkin-600 via-pumpkin-700 to-pumpkin-800"
+						: "from-pumpkin-100 via-pumpkin-300 to-pumpkin-500"
+				}`}
+			>
+				{text}
+			</h2>
+		</div>
 	);
 }
 

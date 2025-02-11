@@ -107,7 +107,7 @@ const SkillCategory: React.FC<SkillCategoryProps> = ({
 							<FadeIn>
 								<div
 									key={index}
-									className="text-center text-tamarillo-800 bg-white rounded-xl p-[6px] font-[800]"
+									className="text-center text-primary-800 bg-white rounded-xl p-[6px] font-[800]"
 								>
 									{skill}
 								</div>

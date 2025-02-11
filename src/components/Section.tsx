@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Title from "./Title";
 import FadeIn from "./animation/FadeIn";
+import { useTheme } from "../contexts/ThemeContext";
 
 interface SectionProps {
 	title: string;
@@ -9,14 +10,17 @@ interface SectionProps {
 }
 
 function Section({ title, children, glow = true }: SectionProps) {
+	const { theme } = useTheme();
+
 	return (
-		<div className="py-16 text-center">
+		<div className="py-20 text-center">
 			<FadeIn>
 				<Title text={title} />
 				<div
-					className={`${
+					className={`mt-8 ${
 						glow &&
-						"overflow-hidden shadow-pumpkin p-8 rounded-[3rem] bg-shark-900"
+						theme == "dark" &&
+						"shadow-pumpkin overflow-hidden p-8 rounded-[3rem] bg-secondary-900"
 					}`}
 				>
 					{children}

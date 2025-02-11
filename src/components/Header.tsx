@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import Hamburger from "../assets/icons/Hamburger";
+import { useTheme } from "../contexts/ThemeContext";
 
 const Header = () => {
 	const [visible, setVisible] = useState(false);
 	const [isHamburgerVisible, setIsHamburgerVisible] = useState(false);
+	const { theme, setTheme } = useTheme();
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
@@ -14,9 +16,11 @@ const Header = () => {
 
 	return (
 		<header
-			className={`fixed w-full top-0 left-0 bg-shark-800 bg-opacity-70 backdrop-blur-lg text-white shadow-xl z-50 transition-opacity duration-[1500ms] ${
-				visible ? "opacity-100" : "opacity-0"
-			}`}
+			className={`fixed w-full top-0 left-0 backdrop-blur-lg shadow-xl z-50 transition-opacity duration-[1500ms] ${
+				theme == "light"
+					? "bg-white bg-opacity-50"
+					: "bg-black bg-opacity-60"
+			} ${visible ? "opacity-100" : "opacity-0"}`}
 		>
 			<nav className="container mx-auto px-6 py-2 lg:py-4 flex justify-between items-center">
 				<div className="lg:hidden relative">
@@ -33,15 +37,19 @@ const Header = () => {
 							isHamburgerVisible
 								? "opacity-100 translate-y-0"
 								: "opacity-0 -translate-y-10 pointer-events-none"
-						} bg-shark-800 w-44 p-6 absolute left-0 mt-2 transition-all duration-500 ease-in-out`}
+						} bg-secondary-800 w-44 p-6 absolute left-0 mt-2 transition-all duration-500 ease-in-out`}
 					>
 						<ul className="flex flex-col gap-4">
 							{navItems.map((item, index) => (
-								<NavItem
+								<div
 									key={index}
-									href={item.href}
-									text={item.text}
-								/>
+									onClick={() => setIsHamburgerVisible(false)}
+								>
+									<NavItem
+										href={item.href}
+										text={item.text}
+									/>
+								</div>
 							))}
 						</ul>
 					</div>
@@ -55,9 +63,18 @@ const Header = () => {
 						/>
 					))}
 				</ul>
-				{/* <div className="text-2xl font-extrabold text-white tracking-wider">
-					Nagham Qarqamaz
-				</div> */}
+				<button
+					onClick={() =>
+						setTheme(theme === "light" ? "dark" : "light")
+					}
+					className="relative w-12 h-7 rounded-full transition-all duration-300 bg-gradient-to-b from-pumpkin-500 to-pumpkin-700 shadow-lg shadow-inner"
+				>
+					<span
+						className={`absolute top-1 left-1 w-5 h-5 rounded-full transition-transform duration-300 bg-gradient-to-b from-pumpkin-100 to-white border border-pumpkin-600 shadow-md ${
+							theme === "dark" ? "translate-x-5" : "translate-x-0"
+						}`}
+					/>
+				</button>
 			</nav>
 		</header>
 	);
@@ -80,6 +97,8 @@ const navItems = [
 ];
 
 const NavItem = ({ href, text }: { href: string; text: string }) => {
+	const { theme } = useTheme();
+
 	const handleScroll = (id: string) => {
 		document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 	};
@@ -87,10 +106,14 @@ const NavItem = ({ href, text }: { href: string; text: string }) => {
 	return (
 		<li
 			onClick={() => handleScroll(href)}
-			className="relative group transition cursor-pointer"
+			className="relative group transition cursor-pointer lg:text-[14px] xl:text-[18px]"
 		>
 			{text}
-			<span className="absolute bottom-0 left-0 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300"></span>
+			<span
+				className={`${
+					theme == "light" ? "bg-black" : "bg-white"
+				} absolute bottom-0 left-0 w-0 h-[2px] group-hover:w-full transition-all duration-300`}
+			></span>
 		</li>
 	);
 };

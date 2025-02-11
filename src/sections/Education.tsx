@@ -5,8 +5,8 @@ import { loadImage } from "../utils/loadImage";
 
 const Education = () => (
 	<Section title="Education">
-		<div className="flex justify-center items-center gap-12">
-			<div className="flex gap-4">
+		<div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-6">
+			<div className="flex flex-wrap justify-center gap-4">
 				<ImageCard
 					src={loadImage("certificates/Graduation Certificate.jpg")}
 					title="Graduation Certificate"
@@ -17,8 +17,8 @@ const Education = () => (
 				/>
 			</div>
 			<SimpleCard className="p-8">
-				<div className="w-[30rem] text-left">
-					<div className="flex justify-between items-center">
+				<div className="text-left">
+					<div className="flex flex-wrap gap-8 justify-between items-center">
 						<h3 className="text-xl font-semibold">
 							Bachelor of Software Engineering
 						</h3>

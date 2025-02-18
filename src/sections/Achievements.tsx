@@ -5,12 +5,12 @@ import SimpleCard from "../components/SimpleCard";
 
 const Achievements = () => (
 	<Section title="Achievements">
-		<div className="max-w-4xl mx-auto text-left space-y-6">
+		<div className="max-w-4xl mx-auto text-left space-y-4 sm:space-y-8">
 			<SlideRight>
 				<SimpleCard className="p-8">
 					<div className="flex justify-between items-center">
 						<h3 className="text-xl font-semibold">
-							Prime Candidate: Noon’s Next Software Engineer
+							Sharpening Skills Through Noon's Selection Process
 						</h3>
 						<span className="text-pumpkin-100 font-bold">2023</span>
 					</div>

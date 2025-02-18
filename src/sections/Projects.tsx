@@ -4,6 +4,7 @@ import Section from "../components/Section";
 import { getProjects } from "../utils/projects";
 import Filters from "../assets/icons/Filters";
 import Tick from "../assets/icons/Tick";
+import { useTheme } from "../contexts/ThemeContext";
 
 const { projects, projectsSkills } = getProjects();
 
@@ -13,6 +14,7 @@ function Projects() {
 	const [selectedSkills, setSelectedSkills] = useState(
 		new Set(projectsSkills)
 	);
+	const { theme } = useTheme();
 
 	const showedProjects = [...projects]
 		.filter((project) =>
@@ -51,7 +53,13 @@ function Projects() {
 
 	return (
 		<Section title="Projects">
-			<div className="flex flex-wrap gap-2 mb-4">
+			<div className="relative flex flex-wrap gap-2 mb-4">
+				{theme == "light" && (
+					<>
+						<div className="absolute -z-10 right-[90%] bottom-[90%] opacity-40 w-[26rem] h-[26rem] bg-primary rounded-full blur-3xl" />
+						<div className="absolute -z-10 right-[60%] bottom-[65%] opacity-40 w-[20rem] h-[20rem] bg-pumpkin rounded-full blur-3xl" />
+					</>
+				)}
 				<div className="flex flex-wrap gap-2">
 					<div>
 						<button
@@ -60,7 +68,7 @@ function Projects() {
 								orderBy === "Latest"
 									? "bg-pumpkin-600"
 									: "bg-pumpkin-800"
-							} rounded`}
+							} rounded-lg`}
 						>
 							Latest
 						</button>
@@ -72,7 +80,7 @@ function Projects() {
 								orderBy === "Most Interesting"
 									? "bg-pumpkin-600"
 									: "bg-pumpkin-800"
-							} rounded`}
+							} rounded-lg`}
 						>
 							Most Interesting
 						</button>
@@ -84,7 +92,7 @@ function Projects() {
 								orderBy === "Oldest"
 									? "bg-pumpkin-600"
 									: "bg-pumpkin-800"
-							} rounded`}
+							} rounded-lg`}
 						>
 							Oldest
 						</button>
@@ -169,7 +177,7 @@ function Projects() {
 					</div>
 				</div>
 			</div>
-			<div className="grid lg:grid-cols-2 gap-8">
+			<div className="grid lg:grid-cols-2 gap-4 sm:gap-8">
 				{showedProjects.map((project, index) => (
 					<ProjectCard
 						key={index}

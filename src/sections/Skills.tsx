@@ -7,7 +7,7 @@ import Section from "../components/Section";
 
 const Skills: React.FC = () => (
 	<Section title="Skills">
-		<div className="flex flex-col items-center mb-12 space-y-12">
+		<div className="flex flex-col items-center space-y-4 sm:space-y-12">
 			<FadeIn>
 				<SimpleCard className="sm:px-8">
 					<div className="flex flex-col sm:flex-row items-center sm:space-x-8">
@@ -29,7 +29,7 @@ const Skills: React.FC = () => (
 				</SimpleCard>
 			</FadeIn>
 
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
 				<SkillCategory
 					title="Frontend & UI Development"
 					description="Creating intuitive and responsive user interfaces."
@@ -76,7 +76,15 @@ const Skills: React.FC = () => (
 				<SkillCategory
 					title="Programming Languages"
 					description="Experience in a variety of programming languages."
-					skills={["PHP", "C++", "C", "C#", "Java", "Python"]}
+					skills={[
+						"Python",
+						"JavaScript",
+						"C++",
+						"Java",
+						"PHP",
+						"C",
+						"C#",
+					]}
 				/>
 			</div>
 		</div>

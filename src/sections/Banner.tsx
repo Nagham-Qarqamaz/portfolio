@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Codeforces from "../assets/icons/Codeforces";
 import Date from "../assets/icons/Date";
 import Email from "../assets/icons/Email";
@@ -15,15 +16,32 @@ import { loadImage } from "../utils/loadImage";
 
 const Banner = () => {
 	const { theme } = useTheme();
+	const [loading, setLoading] = useState(false);
+
+	const handleDownload = async () => {
+		setLoading(true);
+		try {
+			const link = document.createElement("a");
+			link.href = loadImage("resume/Nagham Qarqamaz Resume.pdf");
+			link.download = "Nagham Qarqamaz Resume.pdf";
+			document.body.appendChild(link);
+			link.click();
+			document.body.removeChild(link);
+		} catch (error) {
+			console.error("Error downloading file:", error);
+		} finally {
+			setTimeout(() => setLoading(false), 2000);
+		}
+	};
 
 	return (
 		<div className="bg-[url('/images/cover.jpg')] bg-cover">
 			<div
 				className={`${
-					theme == "light" ? "bg-[#FFFFFFBB]" : "bg-[#000000DD]"
+					theme === "light" ? "bg-[#FFFFFFBB]" : "bg-[#000000DD]"
 				} min-h-screen relative`}
 			>
-				<LazyImage
+				<img
 					className="absolute bottom-0 w-full h-40"
 					src={loadImage("images/wave.png")}
 				/>
@@ -120,20 +138,31 @@ const Banner = () => {
 									<p className="lg:text-[1.3rem]">
 										Software Engineer & Full-Stack Developer
 									</p>
-									<a
-										href="/resume/Nagham Qarqamaz Resume.pdf"
-										download="Nagham Qarqamaz Resume.pdf"
-										className="text-white mt-6 text-xl lg:text-2xl bg-primary-500 hover:bg-primary-600 px-4 py-2 rounded-2xl transform hover:scale-105 transition-transform duration-300 inline-block"
+									<button
+										onClick={handleDownload}
+										className="text-white mt-6 text-xl lg:text-2xl bg-primary-500 hover:bg-primary-600 px-4 py-2 rounded-2xl transform hover:scale-105 transition-transform duration-300 inline-flex items-center gap-2"
+										disabled={loading}
 									>
-										Download Resume
-									</a>
+										{loading ? (
+											<>
+												<img
+													className="w-7 h-7"
+													src={loadImage(
+														"images/loading.gif"
+													)}
+												/>
+												Downloading...
+											</>
+										) : (
+											"Download Resume"
+										)}
+									</button>
 								</div>
 							</SlideLeft>
 						</div>
 					</div>
 				</Container>
 			</div>
-			{/* <div className="h-[2rem] bg-gradient-to-b from-black to-secondary-900" /> */}
 		</div>
 	);
 };

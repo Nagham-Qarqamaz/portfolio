@@ -15,7 +15,7 @@ function Certificates() {
 						theme == "light"
 							? "text-primary-900"
 							: "shadow-pumpkin bg-secondary-900"
-					} overflow-hidden p-8 rounded-[3rem]`}
+					} overflow-hidden p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
 				>
 					<div>
 						<div className="text-3xl font-semibold mb-6">
@@ -24,7 +24,7 @@ function Certificates() {
 						<div className="hidden sm:grid justify-self-center sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
 							{academicExcellenceCertificates}
 						</div>
-						<div className="sm:hidden flex flex-wrap justify-center gap-8">
+						<div className="sm:hidden flex flex-wrap justify-center gap-4">
 							{academicExcellenceCertificates}
 						</div>
 					</div>
@@ -36,7 +36,7 @@ function Certificates() {
 						theme == "light"
 							? "text-primary-900"
 							: "shadow-pumpkin bg-secondary-900"
-					} overflow-hidden p-8 rounded-[3rem] mt-16`}
+					} overflow-hidden p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem] mt-16`}
 				>
 					<div>
 						<div className="text-3xl font-semibold mb-6">
@@ -50,7 +50,7 @@ function Certificates() {
 										theme == "light"
 											? ""
 											: "bg-secondary-700"
-									} overflow-hidden p-4 sm:p-8 rounded-[3rem]`}
+									} overflow-hidden p-4 sm:p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
 								>
 									<div className="text-lg font-semibold mb-6">
 										The 2018 International Collegiate
@@ -65,7 +65,7 @@ function Certificates() {
 										theme == "light"
 											? ""
 											: "bg-secondary-700"
-									} overflow-hidden p-4 sm:p-8 rounded-[3rem]`}
+									} overflow-hidden p-4 sm:p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
 								>
 									<div className="text-lg font-semibold mb-6">
 										The 2019 International Collegiate
@@ -79,7 +79,7 @@ function Certificates() {
 							<div
 								className={`${
 									theme == "light" ? "" : "bg-secondary-700"
-								} overflow-hidden p-4 sm:p-8 rounded-[3rem]`}
+								} overflow-hidden p-4 sm:p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
 							>
 								<div className="text-lg font-semibold mb-6">
 									The 2020 Africa and Arab Collegiate
@@ -88,25 +88,25 @@ function Certificates() {
 								<div className="hidden sm:grid justify-self-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
 									{girlsACPC2020}
 								</div>
-								<div className="sm:hidden flex flex-wrap justify-center gap-8">
+								<div className="sm:hidden flex flex-wrap justify-center gap-4">
 									{girlsACPC2020}
 								</div>
 							</div>
 							<div
 								className={`${
 									theme == "light" ? "" : "bg-secondary-700"
-								} overflow-hidden p-4 sm:p-8 rounded-[3rem]`}
+								} overflow-hidden p-4 sm:p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
 							>
 								<div className="text-lg font-semibold mb-6">
-									The 2022 International Collegiate
+									The 2021 International Collegiate
 									Programming Contest
 								</div>
 								<div className="hidden sm:grid justify-self-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
 									<div></div>
-									{icpc2022}
+									{icpc2021}
 								</div>
-								<div className="sm:hidden flex flex-wrap justify-center gap-8">
-									{icpc2022}
+								<div className="sm:hidden flex flex-wrap justify-center gap-4">
+									{icpc2021}
 								</div>
 							</div>
 						</div>
@@ -215,19 +215,19 @@ const girlsACPC2020 = (
 	</>
 );
 
-const icpc2022 = (
+const icpc2021 = (
 	<>
 		<ImageCard
-			src={loadImage("certificates/ICPC 2022 - TCPC - Fourth Place.jpg")}
+			src={loadImage("certificates/ICPC 2021 - TCPC - Fourth Place.jpg")}
 			title="Tishreen University"
 		/>
 		<ImageCard
-			src={loadImage("certificates/ICPC 2022 - SCPC - Seventh Place.jpg")}
+			src={loadImage("certificates/ICPC 2021 - SCPC - Seventh Place.jpg")}
 			title="SCPC: Syrian"
 		/>
 		<ImageCard
 			src={loadImage(
-				"certificates/ICPC 2022 - ACPC - Fifty Seventh Place.jpg"
+				"certificates/ICPC 2021 - ACPC - Fifty Seventh Place.jpg"
 			)}
 			title="ACPC: Arabic"
 		/>

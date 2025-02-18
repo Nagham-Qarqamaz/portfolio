@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Hamburger from "../assets/icons/Hamburger";
 import { useTheme } from "../contexts/ThemeContext";
 
@@ -6,6 +6,7 @@ const Header = () => {
 	const [visible, setVisible] = useState(false);
 	const [isHamburgerVisible, setIsHamburgerVisible] = useState(false);
 	const { theme, setTheme } = useTheme();
+	const menuRef = useRef<HTMLDivElement | null>(null);
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
@@ -13,6 +14,28 @@ const Header = () => {
 		}, 100);
 		return () => clearTimeout(timer);
 	}, []);
+
+	// Close the menu when clicking outside
+	useEffect(() => {
+		const handleClickOutside = (event: MouseEvent) => {
+			if (
+				menuRef.current &&
+				!menuRef.current.contains(event.target as Node)
+			) {
+				setIsHamburgerVisible(false);
+			}
+		};
+
+		if (isHamburgerVisible) {
+			document.addEventListener("mousedown", handleClickOutside);
+		} else {
+			document.removeEventListener("mousedown", handleClickOutside);
+		}
+
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	}, [isHamburgerVisible]);
 
 	return (
 		<header
@@ -23,7 +46,7 @@ const Header = () => {
 			} ${visible ? "opacity-100" : "opacity-0"}`}
 		>
 			<nav className="container mx-auto px-6 py-2 lg:py-4 flex justify-between items-center">
-				<div className="lg:hidden relative">
+				<div className="lg:hidden relative" ref={menuRef}>
 					<button
 						onClick={() =>
 							setIsHamburgerVisible(!isHamburgerVisible)

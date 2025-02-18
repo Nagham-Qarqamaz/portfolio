@@ -16,8 +16,6 @@ function ProjectCard({
 	skills,
 	videoURL,
 }: ProjectCardProps) {
-	console.log(skills);
-
 	return (
 		<SimpleCard>
 			<div className="flex flex-col justify-between h-full">

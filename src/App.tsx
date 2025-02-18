@@ -11,7 +11,6 @@ import Languages from "./sections/Languages";
 import Container from "./components/Container";
 import FunFacts from "./sections/FunFacts";
 import { useTheme } from "./contexts/ThemeContext";
-import LazyImage from "./components/LazyImage";
 import { loadImage } from "./utils/loadImage";
 import { useMemo } from "react";
 
@@ -84,7 +83,7 @@ const App = () => {
 						<Languages />
 					</section>
 				</Container>
-				<LazyImage
+				<img
 					className="w-full h-40"
 					src={loadImage("images/wave.png")}
 				/>

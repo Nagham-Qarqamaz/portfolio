@@ -13,10 +13,10 @@ function SimpleCard({
 }: SimpleCardProps) {
 	return (
 		<div
-			className={`${className} text-white p-4 rounded-lg shadow-lg text-[0.9rem] h-full ${
+			className={`text-white p-4 rounded-[1rem] shadow-lg text-[0.9rem] h-full ${
 				hoverEffect &&
 				"transform hover:scale-105 transition-transform duration-300"
-			} bg-primary-800`}
+			} bg-primary-800 ${className}`}
 		>
 			{children}
 		</div>

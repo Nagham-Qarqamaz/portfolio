@@ -3,21 +3,32 @@ import SlideLeft from "../components/animation/SlideLeft";
 import SlideRight from "../components/animation/SlideRight";
 import Section from "../components/Section";
 import SimpleCard from "../components/SimpleCard";
+import { useTheme } from "../contexts/ThemeContext";
 
 const Experience = () => {
+	const { theme } = useTheme();
+
 	return (
 		<Section title="Experience">
-			<div className="hidden md:flex gap-8 justify-between text-left">
-				<div className="space-y-[12rem]">
-					{eyes360}
-					{aratech}
+			<div className="relative hidden md:flex gap-8 justify-between text-left">
+				{theme == "light" && (
+					<>
+						<div className="absolute -z-10 right-[80%] bottom-[80%] opacity-40 w-[20rem] h-[20rem] bg-pumpkin rounded-full blur-3xl" />
+						<div className="absolute -z-10 right-[60%] bottom-[65%] opacity-40 w-[20rem] h-[20rem] bg-primary rounded-full blur-3xl" />
+					</>
+				)}
+				<div>
+					<div className="mt-48 lg:mt-40">{eyes360}</div>
+					<div className="mt-44 lg:mt-36">{aratech}</div>
 				</div>
-				<div className="space-y-[15rem] mt-[11rem]">
-					{divcodes}
-					{icpc}
+				<div>
+					<div className="mt-0">{starkTechnologies}</div>
+					<div className="mt-44 lg:mt-36">{divcodes}</div>
+					<div className="mt-60 lg:mt-44">{icpc}</div>
 				</div>
 			</div>
-			<div className="md:hidden space-y-8">
+			<div className="md:hidden space-y-4 sm:space-y-8">
+				{starkTechnologies}
 				{eyes360}
 				{divcodes}
 				{aratech}
@@ -29,10 +40,10 @@ const Experience = () => {
 
 export default Experience;
 
-const eyes360 = (
+const starkTechnologies = (
 	<div className="relative">
 		<FadeIn>
-			<div className="hidden md:block absolute top-20 left-full w-[75%] h-32 border-t-4 border-r-4 border-primary-500 border-dashed rounded-tr-[40px]" />
+			<div className="hidden md:block absolute right-full top-20 w-[75%] h-32 border-t-4 border-l-4 border-primary-500 border-dashed rounded-tl-[40px]" />
 		</FadeIn>
 		<SlideRight>
 			<SimpleCard className="p-8">
@@ -41,29 +52,63 @@ const eyes360 = (
 						Freelance Web Developer
 					</h3>
 					<span className="text-pumpkin-100 font-bold">
-						08/2024 – Present
+						11/2024 – Present
 					</span>
 				</div>
 				<p className="italic text-pumpkin-100">
-					Eyes360, Cairo, Egypt (Remote)
+					Stark Technologies, Serbia (Remote)
 				</p>
 				<ul className="list-disc list-inside mt-2 space-y-1 text-left">
 					<li className="custom-bullet">
-						Working on WebGL projects, integrating 3D rendering into
-						web applications.
+						Developing diverse projects using React and Next.js.
 					</li>
 					<li className="custom-bullet">
-						Delivering optimized, interactive frontend solutions.
+						Crafting high-performance, interactive frontend
+						experiences.
 					</li>
 				</ul>
 			</SimpleCard>
 		</SlideRight>
 	</div>
 );
+const eyes360 = (
+	<div className="relative">
+		<FadeIn>
+			<div className="hidden md:block absolute top-28 lg:top-20 left-full w-[75%] h-32 border-t-4 border-r-4 border-primary-500 border-dashed rounded-tr-[40px]" />
+		</FadeIn>
+		<div className="relative z-10">
+			<SlideRight>
+				<SimpleCard className="p-8">
+					<div className="flex justify-between items-center flex-wrap gap-x-8">
+						<h3 className="text-xl font-semibold">
+							Freelance Web Developer
+						</h3>
+						<span className="text-pumpkin-100 font-bold">
+							08/2024 – Present
+						</span>
+					</div>
+					<p className="italic text-pumpkin-100">
+						Eyes360, Cairo, Egypt (Remote)
+					</p>
+					<ul className="list-disc list-inside mt-2 space-y-1 text-left">
+						<li className="custom-bullet">
+							Working on WebGL projects, integrating 3D rendering
+							into web applications.
+						</li>
+						<li className="custom-bullet">
+							Delivering optimized, interactive frontend
+							solutions.
+						</li>
+					</ul>
+				</SimpleCard>
+			</SlideRight>
+		</div>
+	</div>
+);
 const divcodes = (
 	<div className="relative">
 		<FadeIn>
-			<div className="hidden md:block absolute right-full top-44 lg:top-24 w-[75%] h-32 border-t-4 border-l-4 border-primary-500 border-dashed rounded-tl-[40px]" />
+			<div className="hidden md:block absolute right-full top-24 w-[75%] h-32 border-t-4 border-l-4 border-primary-500 border-dashed rounded-tl-[40px]" />
 		</FadeIn>
 		<SlideLeft>
 			<SimpleCard className="p-8">
@@ -138,7 +183,7 @@ const aratech = (
 const icpc = (
 	<div className="relative">
 		<FadeIn>
-			<div className="hidden md:block absolute right-full top-20 lg:top-0 w-[75%] h-32 border-b-4 border-l-4 border-primary-500 border-dashed rounded-bl-[40px]" />
+			<div className="hidden md:block absolute right-full top-0 w-[75%] h-32 border-b-4 border-l-4 border-primary-500 border-dashed rounded-bl-[40px]" />
 		</FadeIn>
 		<SlideLeft>
 			<SimpleCard className="p-8">

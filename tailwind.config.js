@@ -28,6 +28,7 @@ export default {
             },
             boxShadow: {
                 'pumpkin': '0 0 30px rgba(255, 117, 24, 0.75)',
+                'primary': '0 0 40px primary',
             },
             colors: {
                 'pumpkin': {

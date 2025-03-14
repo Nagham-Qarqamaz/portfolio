@@ -36,11 +36,23 @@ const Skills: React.FC = () => (
 					skills={[
 						"React.js",
 						"Next.js",
+						"Angular",
 						"HTML",
 						"CSS",
 						"JavaScript",
 						"TypeScript",
 						"Tailwind CSS",
+					]}
+				/>
+				<SkillCategory
+					title="Backend Development"
+					description="Proficiency in server-side development and building scalable backends."
+					skills={[
+						"Laravel",
+						"Django",
+						"MySQL",
+						"WordPress",
+						"Spring Boot",
 					]}
 				/>
 				<SkillCategory
@@ -62,11 +74,6 @@ const Skills: React.FC = () => (
 						"UML",
 						"Software Design Patterns",
 					]}
-				/>
-				<SkillCategory
-					title="Backend Development"
-					description="Proficiency in server-side development and building scalable backends."
-					skills={["Laravel", "Django", "MySQL", "WordPress"]}
 				/>
 				<SkillCategory
 					title="Version Control & Collaboration"

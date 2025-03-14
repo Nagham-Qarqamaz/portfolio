@@ -40,6 +40,24 @@ const Achievements = () => (
 				<SimpleCard className="p-8">
 					<div className="flex justify-between items-center">
 						<h3 className="text-xl font-semibold">
+							Fast Learning Ability
+						</h3>
+					</div>
+					<ul className="list-disc list-inside mt-2 space-y-1">
+						<li className="custom-bullet">
+							Over the course of just 4 days, I built a fully
+							functioning application using Spring Boot for the
+							backend and Angular for the frontend—technologies I
+							had never worked with before
+						</li>
+					</ul>
+				</SimpleCard>
+			</SlideLeft>
+
+			<SlideRight>
+				<SimpleCard className="p-8">
+					<div className="flex justify-between items-center">
+						<h3 className="text-xl font-semibold">
 							Expert Ranking on Codeforces
 						</h3>
 						<span className="text-pumpkin-100 font-bold">
@@ -53,9 +71,9 @@ const Achievements = () => (
 						</li>
 					</ul>
 				</SimpleCard>
-			</SlideLeft>
+			</SlideRight>
 
-			<SlideRight>
+			<SlideLeft>
 				<SimpleCard className="p-8">
 					<div className="flex justify-between items-center">
 						<h3 className="text-xl font-semibold">
@@ -71,7 +89,7 @@ const Achievements = () => (
 						</li>
 					</ul>
 				</SimpleCard>
-			</SlideRight>
+			</SlideLeft>
 		</div>
 	</Section>
 );

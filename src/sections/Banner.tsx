@@ -38,7 +38,7 @@ const Banner = () => {
 		<div className="bg-[url('/images/cover.jpg')] bg-cover">
 			<div
 				className={`${
-					theme === "light" ? "bg-[#FFFFFFBB]" : "bg-[#000000DD]"
+					theme === "light" ? "bg-[#FFFFFFDD]" : "bg-[#000000DD]"
 				} min-h-screen relative`}
 			>
 				<img
@@ -128,7 +128,7 @@ const Banner = () => {
 								<div className="flex flex-col items-center justify-center text-center">
 									<FadeIn>
 										<LazyImage
-											className="mb-4 h-[10rem] lg:h-[12rem] rounded-[30px]"
+											className="mb-4 h-[10rem] lg:h-[12rem] rounded-[30px] shadow-primary"
 											src={loadImage("images/sketch.png")}
 										/>
 									</FadeIn>

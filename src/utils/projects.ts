@@ -1,5 +1,5 @@
 export function getProjects() {
-    const projectsInterestOrder = [9, 3, 2, 1, 7, 10, 8, 6, 5, 4];
+    const projectsInterestOrder = [9, 3, 2, 11, 1, 7, 10, 8, 6, 5, 4];
 
     const projects = [
         {
@@ -141,6 +141,20 @@ export function getProjects() {
                 interest: 0,
             },
             skills: ["React", "Next.js", "Tailwind"],
+        },
+        {
+            id: 11,
+            name: "Patitas",
+            company: "Personal / test application",
+            description:
+                "Over the course of just 4 days, I built a fully functioning application using Spring Boot for the backend and Angular for the frontend—technologies I had never worked with before. With the help of online tutorials and AI tools, I was able to quickly learn and implement new concepts, demonstrating my ability to adapt and learn fastly. You can check out the project <a class='underline' href='https://github.com/Nagham-Qarqamaz/repo-prueba'>HERE</a>.",
+            videoURL:
+                "https://www.youtube.com/embed/3_p-boncOEs?si=EeLnvLWhSDEZys61",
+            order: {
+                date: 11,
+                interest: 0,
+            },
+            skills: ["Angular", "Spring Boot", "Tailwind"],
         },
     ];
 

@@ -23,9 +23,10 @@ function ProjectCard({
 					{name && <h3 className="text-xl font-semibold">{name}</h3>}
 					{company && <p>({company})</p>}
 					{description && (
-						<p className="mt-2 space-y-1 text-base text-left">
-							{description}
-						</p>
+						<div
+							className="mt-2 space-y-1 text-base text-left"
+							dangerouslySetInnerHTML={{ __html: description }}
+						/>
 					)}
 					{skills && (
 						<div className="flex flex-wrap gap-2 mt-4">

@@ -6,14 +6,16 @@ function Title({ text }: { text: string }) {
 	return (
 		<div
 			className={`mb-4 ${
-				theme == "light" ? "w-full flex justify-center" : ""
+				theme == "light"
+					? "w-full flex justify-center border-t-4 border-b-4 border-primary"
+					: ""
 			}`}
 		>
 			<h2
-				className={`w-fit text-[13vw] sm:text-[5rem] font-bold bg-gradient-to-r text-transparent bg-clip-text ${
+				className={`w-fit text-[13vw] sm:text-[5rem] font-bold ${
 					theme == "light"
-						? "from-pumpkin-500 via-pumpkin-600 to-pumpkin-700"
-						: "from-pumpkin-100 via-pumpkin-300 to-pumpkin-500"
+						? "text-primary"
+						: "bg-gradient-to-r text-transparent bg-clip-text from-pumpkin-100 via-pumpkin-300 to-pumpkin-500"
 				}`}
 			>
 				{text}

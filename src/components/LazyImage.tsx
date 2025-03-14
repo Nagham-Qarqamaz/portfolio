@@ -23,13 +23,13 @@ const LazyImage = ({
 					className={`flex justify-center items-center ${className}`}
 				>
 					<img
-						className={`w-16 h-16 ${imgClass}`}
+						className="w-16 h-16"
 						src={loadImage("images/loading.gif")}
 					/>
 				</div>
 			)}
 			<img
-				className={className}
+				className={`${className} ${imgClass}`}
 				src={src}
 				alt={alt}
 				style={{ display: isLoaded ? "block" : "none" }}

@@ -4,10 +4,16 @@ import { loadImage } from "../utils/loadImage";
 interface LazyImageProps {
 	src: string;
 	className?: string;
+	imgClass?: string;
 	alt?: string;
 }
 
-const LazyImage = ({ src, className = "", alt = "image" }: LazyImageProps) => {
+const LazyImage = ({
+	src,
+	className = "",
+	imgClass = "",
+	alt = "image",
+}: LazyImageProps) => {
 	const [isLoaded, setIsLoaded] = useState(false);
 
 	return (
@@ -17,7 +23,7 @@ const LazyImage = ({ src, className = "", alt = "image" }: LazyImageProps) => {
 					className={`flex justify-center items-center ${className}`}
 				>
 					<img
-						className="w-16 h-16"
+						className={`w-16 h-16 ${imgClass}`}
 						src={loadImage("images/loading.gif")}
 					/>
 				</div>

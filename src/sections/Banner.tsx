@@ -128,7 +128,8 @@ const Banner = () => {
 								<div className="flex flex-col items-center justify-center text-center">
 									<FadeIn>
 										<LazyImage
-											className="mb-4 h-[10rem] lg:h-[12rem] rounded-[30px] shadow-primary"
+											className="mb-4 h-[10rem] lg:h-[12rem] rounded-[30px]"
+											imgClass="shadow-primary"
 											src={loadImage("images/sketch.png")}
 										/>
 									</FadeIn>

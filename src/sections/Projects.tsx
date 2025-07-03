@@ -4,7 +4,6 @@ import Section from "../components/Section";
 import { getProjects } from "../utils/projects";
 import Filters from "../assets/icons/Filters";
 import Tick from "../assets/icons/Tick";
-import { useTheme } from "../contexts/ThemeContext";
 
 const { projects, projectsSkills } = getProjects();
 
@@ -14,7 +13,6 @@ function Projects() {
 	const [selectedSkills, setSelectedSkills] = useState(
 		new Set(projectsSkills)
 	);
-	const { theme } = useTheme();
 
 	const showedProjects = [...projects]
 		.filter((project) =>
@@ -54,12 +52,6 @@ function Projects() {
 	return (
 		<Section title="Projects">
 			<div className="relative flex flex-wrap gap-2 mb-4">
-				{theme == "light" && (
-					<>
-						<div className="absolute -z-10 right-[90%] bottom-[90%] opacity-40 w-[26rem] h-[26rem] bg-primary rounded-full blur-3xl" />
-						<div className="absolute -z-10 right-[60%] bottom-[65%] opacity-40 w-[20rem] h-[20rem] bg-pumpkin rounded-full blur-3xl" />
-					</>
-				)}
 				<div className="flex flex-wrap gap-2">
 					<div>
 						<button

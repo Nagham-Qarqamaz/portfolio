@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { navItems, NavItem } from "./navLinks";
 import Hamburger from "../assets/icons/Hamburger";
 import { useTheme } from "../contexts/ThemeContext";
 
@@ -104,39 +105,3 @@ const Header = () => {
 };
 
 export default Header;
-
-const navItems = [
-	{ href: "home", text: "Home" },
-	{ href: "about", text: "About" },
-	{ href: "skills", text: "Skills" },
-	{ href: "experience", text: "Experience" },
-	{ href: "projects", text: "Projects" },
-	{ href: "education", text: "Education" },
-	{ href: "certificates", text: "Certificates" },
-	{ href: "achievements", text: "Achievements" },
-	{ href: "fun-facts", text: "Fun Facts" },
-	{ href: "languages", text: "Languages" },
-	{ href: "home", text: "Contact" },
-];
-
-const NavItem = ({ href, text }: { href: string; text: string }) => {
-	const { theme } = useTheme();
-
-	const handleScroll = (id: string) => {
-		document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-	};
-
-	return (
-		<li
-			onClick={() => handleScroll(href)}
-			className="relative group transition cursor-pointer lg:text-[14px] xl:text-[18px]"
-		>
-			{text}
-			<span
-				className={`${
-					theme == "light" ? "bg-black" : "bg-white"
-				} absolute bottom-0 left-0 w-0 h-[2px] group-hover:w-full transition-all duration-300`}
-			></span>
-		</li>
-	);
-};

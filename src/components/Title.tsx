@@ -5,14 +5,10 @@ function Title({ text }: { text: string }) {
 
 	return (
 		<div
-			className={`mb-4 ${
-				theme == "light"
-					? "w-full flex justify-center border-t-4 border-b-4 border-primary"
-					: ""
-			}`}
+			className={`mb-4 w-full flex justify-center`}
 		>
 			<h2
-				className={`w-fit text-[13vw] sm:text-[5rem] font-bold ${
+				className={`w-fit text-[13vw] sm:text-[3rem] font-bold ${
 					theme == "light"
 						? "text-primary"
 						: "bg-gradient-to-r text-transparent bg-clip-text from-pumpkin-100 via-pumpkin-300 to-pumpkin-500"

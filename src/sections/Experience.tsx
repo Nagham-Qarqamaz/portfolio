@@ -1,20 +1,12 @@
 import ExperienceCard from "../components/ExperienceCard";
 import Section from "../components/Section";
-import { useTheme } from "../contexts/ThemeContext";
 import { experiences } from "../utils/experiences";
 
 const Experience = () => {
-	const { theme } = useTheme();
 
 	return (
 		<Section title="Experience">
 			<div className="relative hidden md:flex gap-8 justify-between text-left">
-				{theme == "light" && (
-					<>
-						<div className="absolute -z-10 right-[80%] bottom-[80%] opacity-40 w-[20rem] h-[20rem] bg-pumpkin rounded-full blur-3xl" />
-						<div className="absolute -z-10 right-[60%] bottom-[65%] opacity-40 w-[20rem] h-[20rem] bg-primary rounded-full blur-3xl" />
-					</>
-				)}
 				<div>
 					{experiences
 						.filter((_, index) => index % 2 === 0)

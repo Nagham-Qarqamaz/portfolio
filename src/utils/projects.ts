@@ -1,5 +1,5 @@
 export function getProjects() {
-    const projectsInterestOrder = [9, 3, 2, 11, 1, 7, 10, 8, 6, 5, 4];
+    const projectsInterestOrder = [9, 3, 2, 11, 1, 7, 10, 8, 6, 12, 5, 4];
 
     const projects = [
         {
@@ -155,6 +155,19 @@ export function getProjects() {
                 interest: 0,
             },
             skills: ["Angular", "Spring Boot", "Tailwind"],
+        },
+        {
+            id: 12,
+            name: "Articalization",
+            company: "Personal / test application",
+            description: "In this project, I built a client-side news aggregation application that gathers articles from various external sources using public APIs. Users can filter the news by date, category, search query, and source, with paginated results for easy navigation. They can also customize their experience by adding preferred sources, authors, and categories, tailoring the news feed to their personal interests. You can check out the project <a class='underline' href='https://github.com/Nagham-Qarqamaz/articalization'>HERE</a>."
+            ,videoURL:
+                "https://www.youtube.com/embed/9V-b1aAr0dQ?si=cw-vIE_bUP9ZGdez",
+            order: {
+                date: 12,
+                interest: 0,
+            },
+            skills: ["React", "Redux", "Tailwind"],
         },
     ];
 

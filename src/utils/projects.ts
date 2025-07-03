@@ -17,7 +17,7 @@ export function getProjects() {
             skills: ["OpenGL", "C++"],
         },
         {
-            id: 2,
+            id: 2, 
             name: "University 4th-year Project",
             company: "university",
             description:

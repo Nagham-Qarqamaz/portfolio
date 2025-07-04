@@ -15,27 +15,6 @@ function Certificates() {
                         theme == "light"
                             ? "text-primary-900"
                             : "shadow-pumpkin bg-secondary-900"
-                    } overflow-hidden p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
-                >
-                    <div>
-                        <div className="text-3xl font-semibold mb-6">
-                            Al-Basel Certificates for Academic Excellence
-                        </div>
-                        <div className="hidden sm:grid justify-self-center sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
-                            {academicExcellenceCertificates}
-                        </div>
-                        <div className="sm:hidden flex flex-wrap justify-center gap-4">
-                            {academicExcellenceCertificates}
-                        </div>
-                    </div>
-                </div>
-            </FadeIn>
-            <FadeIn>
-                <div
-                    className={`${
-                        theme == "light"
-                            ? "text-primary-900"
-                            : "shadow-pumpkin bg-secondary-900"
                     } overflow-hidden p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem] mt-16`}
                 >
                     <div>
@@ -108,6 +87,27 @@ function Certificates() {
                                     {icpc2021}
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </FadeIn>
+            <FadeIn>
+                <div
+                    className={`${
+                        theme == "light"
+                            ? "text-primary-900"
+                            : "shadow-pumpkin bg-secondary-900"
+                    } overflow-hidden p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
+                >
+                    <div>
+                        <div className="text-3xl font-semibold mb-6">
+                            Al-Basel Certificates for Academic Excellence
+                        </div>
+                        <div className="hidden sm:grid justify-self-center sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
+                            {academicExcellenceCertificates}
+                        </div>
+                        <div className="sm:hidden flex flex-wrap justify-center gap-4">
+                            {academicExcellenceCertificates}
                         </div>
                     </div>
                 </div>

@@ -1,32 +1,42 @@
 import { useEffect, useState, useRef } from "react";
 
-// Custom hook to detect when an element is in the viewport
 const useOnScreen = (options: IntersectionObserverInit) => {
-	// Define ref type explicitly as HTMLDivElement or null
-	const ref = useRef<HTMLDivElement | null>(null);
-	const [isVisible, setIsVisible] = useState(false);
+    const ref = useRef<HTMLDivElement | null>(null);
+    const [isVisible, setIsVisible] = useState(false);
 
-	useEffect(() => {
-		// Define the observer logic
-		const observer = new IntersectionObserver(([entry]) => {
-			setIsVisible(entry.isIntersecting);
-		}, options);
+    useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+            setIsVisible(entry.isIntersecting);
+        }, options);
 
-		// Only observe if ref.current is set
-		if (ref.current) {
-			observer.observe(ref.current);
-		}
+        const el = ref.current;
+        if (el) {
+            observer.observe(el);
 
-		// Cleanup observer when component unmounts or ref changes
-		return () => {
-			if (ref.current) {
-				observer.unobserve(ref.current);
-			}
-		};
-	}, [ref, options]);
+            if (typeof window !== "undefined") {
+                const rect = el.getBoundingClientRect();
+                const windowHeight =
+                    window.innerHeight || document.documentElement.clientHeight;
+                const windowWidth =
+                    window.innerWidth || document.documentElement.clientWidth;
+                const isInView =
+                    rect.top < windowHeight &&
+                    rect.bottom > 0 &&
+                    rect.left < windowWidth &&
+                    rect.right > 0;
 
-	// Return ref and visibility state
-	return [ref, isVisible] as const;
+                if (isInView) {
+                    setIsVisible(true);
+                }
+            }
+        }
+
+        return () => {
+            if (el) observer.unobserve(el);
+        };
+    }, [options]);
+
+    return [ref, isVisible] as const;
 };
 
 export default useOnScreen;

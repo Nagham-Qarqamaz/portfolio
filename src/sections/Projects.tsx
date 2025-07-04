@@ -8,7 +8,7 @@ import Tick from "../assets/icons/Tick";
 const { projects, projectsSkills } = getProjects();
 
 function Projects() {
-    const [orderBy, setOrderBy] = useState("Latest");
+    const [orderBy, setOrderBy] = useState("Most Interesting");
     const [showFilters, setShowFilters] = useState(false);
     const [selectedSkills, setSelectedSkills] = useState(
         new Set(projectsSkills)
@@ -169,7 +169,7 @@ function Projects() {
                     </div>
                 </div>
             </div>
-            <div className="grid lg:grid-cols-2 gap-4 sm:gap-8">
+            <div className="grid lg:grid-cols-2 gap-x-4 gap-y-8 sm:gap-8">
                 {showedProjects.map((project, index) => (
                     <ProjectCard
                         key={index}

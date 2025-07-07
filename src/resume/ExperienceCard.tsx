@@ -6,7 +6,7 @@ interface ExperienceCardProps {
     title: string;
     organization: string;
     date: string;
-    location: string;
+    location?: string;
     bulletPoints: string[];
 }
 
@@ -28,10 +28,12 @@ function ExperienceCard({
                     <Date className="!text-[#3D3D3D] !w-4 !h-4" />
                     {date}
                 </div>
-                <div className="flex gap-1 items-center">
-                    <Location className="!fill-[#3D3D3D] !w-4 !h-4" />
-                    {location}
-                </div>
+                {location && (
+                    <div className="flex gap-1 items-center">
+                        <Location className="!fill-[#3D3D3D] !w-4 !h-4" />
+                        {location}
+                    </div>
+                )}
             </div>
             <div className="text-[#3D3D3D]">
                 <ResumeUnorderedList items={bulletPoints} />

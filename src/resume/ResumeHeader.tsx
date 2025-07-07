@@ -2,7 +2,6 @@ import Email from "../assets/icons/Email";
 import LinkedIn from "../assets/icons/LinkedIn";
 import Phone from "../assets/icons/Phone";
 import Website from "../assets/icons/Website";
-import { loadImage } from "../utils/loadImage";
 
 const ResumeHeader = () => {
     return (
@@ -54,7 +53,7 @@ const ResumeHeader = () => {
             <div className="w-[35%] flex justify-end items-center">
                 <img
                     className="rounded-full w-52 h-52"
-                    src={loadImage("images/profile.jpg")}
+                    src="https://nagham-qarqamaz.github.io/portfolio/images/profile.jpg"
                 />
             </div>
         </div>

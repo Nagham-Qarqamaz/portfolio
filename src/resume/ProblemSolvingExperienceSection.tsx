@@ -10,7 +10,6 @@ function ProblemSolvingExperienceSection() {
                     title="ICPC Competitor · Problem Setter · Coach"
                     organization="International Collegiate Programming Contest"
                     date="2018 - 2021"
-                    location=""
                     bulletPoints={[
                         "Gold Medalist (4th place), ACPC for Girls 2020.",
                         "Silver Medalist (7th place), SCPC 2021.",

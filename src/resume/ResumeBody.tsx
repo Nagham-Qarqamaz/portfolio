@@ -11,11 +11,11 @@ const ResumeBody = () => {
             <div className="w-[65%] space-y-8">
                 <ExperienceSection />
                 <ProblemSolvingExperienceSection />
+                <EducationSection />
             </div>
             <div className="w-[35%] space-y-8">
                 <SummarySection />
                 <SkillsSection />
-                <EducationSection />
                 <LanguagesSection />
             </div>
         </div>

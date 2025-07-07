@@ -25,11 +25,11 @@ function ExperienceCard({
             </div>
             <div className="flex gap-6 text-[#3D3D3D] text-[15px]">
                 <div className="flex gap-1 items-center">
-                    <Date className="text-[#3D3D3D] !w-4 !h-4" />
+                    <Date className="!text-[#3D3D3D] !w-4 !h-4" />
                     {date}
                 </div>
                 <div className="flex gap-1 items-center">
-                    <Location className="fill-[#3D3D3D] !w-4 !h-4" />
+                    <Location className="!fill-[#3D3D3D] !w-4 !h-4" />
                     {location}
                 </div>
             </div>

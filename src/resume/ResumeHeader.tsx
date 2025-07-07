@@ -2,7 +2,6 @@ import Email from "../assets/icons/Email";
 import LinkedIn from "../assets/icons/LinkedIn";
 import Phone from "../assets/icons/Phone";
 import Website from "../assets/icons/Website";
-import LazyImage from "../components/LazyImage";
 import { loadImage } from "../utils/loadImage";
 
 const ResumeHeader = () => {
@@ -15,7 +14,7 @@ const ResumeHeader = () => {
                 </div>
                 <div className="mt-4">
                     <div className="flex items-center gap-2">
-                        <Phone className="fill-[#008CFF] !w-5 !h-5" />{" "}
+                        <Phone className="!fill-[#008CFF] !w-5 !h-5" />{" "}
                         <a
                             className="underline"
                             href="https://wa.me/+963992803522"
@@ -24,7 +23,7 @@ const ResumeHeader = () => {
                         </a>
                     </div>
                     <div className="flex items-center gap-2">
-                        <Email className="fill-[#008CFF] !w-5 !h-5" />{" "}
+                        <Email className="!fill-[#008CFF] !w-5 !h-5" />{" "}
                         <a
                             className="underline"
                             href="mailto:nagham.qarqamaz.kp@gmail.com"
@@ -33,7 +32,7 @@ const ResumeHeader = () => {
                         </a>
                     </div>
                     <div className="flex items-center gap-2">
-                        <LinkedIn className="fill-[#008CFF] !w-5 !h-5" />{" "}
+                        <LinkedIn className="!fill-[#008CFF] !w-5 !h-5" />{" "}
                         <a
                             className="underline"
                             href="https://linkedin.com/in/nagham-qarqamaz"
@@ -42,7 +41,7 @@ const ResumeHeader = () => {
                         </a>
                     </div>
                     <div className="flex items-center gap-2">
-                        <Website className="fill-[#008CFF] !w-5 !h-5" />{" "}
+                        <Website className="!fill-[#008CFF] !w-5 !h-5" />{" "}
                         <a
                             className="underline"
                             href="https://nagham-qarqamaz.github.io/portfolio/"
@@ -53,7 +52,7 @@ const ResumeHeader = () => {
                 </div>
             </div>
             <div className="w-[35%] flex justify-end items-center">
-                <LazyImage
+                <img
                     className="rounded-full w-52 h-52"
                     src={loadImage("images/profile.jpg")}
                 />

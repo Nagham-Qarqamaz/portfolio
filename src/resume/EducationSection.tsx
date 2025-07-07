@@ -14,7 +14,7 @@ function EducationSection() {
                     bulletPoints={[
                         "Valedictorian with an average of 92.08% (approx. GPA: 3.8/4.0).",
                         "Awarded Al-Basel Certificates for Academic Excellence consecutively from 2017 to 2022.",
-                        "Gained deep experience in algorithms, data structures, and complexity through national-level competitive programming contests.",
+                        "Gained deep experience in algorithms, data structures, and complexity through 4 years of competitive programming contests.",
                     ]}
                 />
             </div>

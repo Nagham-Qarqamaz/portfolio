@@ -16,8 +16,8 @@ function ProblemSolvingExperienceSection() {
                         "Competed in ACPC 2021 as Tishreen University’s regional contestant.",
                         "Authored problems for SCPC 2020.",
                         "Reached Expert rank on Codeforces (2018–2021).",
-                        "Received multiple certificates recognizing participation and achievements in ICPC contests.",
-                        "Provided mentorship and training to younger participants preparing for ICPC competitions.",
+                        "Received 12 certificates recognizing participation and achievements in ICPC contests.",
+                        "Provided mentorship and training to over 30 younger participants preparing for ICPC competitions.",
                     ]}
                 />
             </div>

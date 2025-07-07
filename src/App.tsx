@@ -7,7 +7,6 @@ import CertificatesPage from "./pages/certificates";
 import SkillsPage from "./pages/skills";
 import ExperiencePage from "./pages/experience";
 import Header from "./components/Header";
-import { loadImage } from "./utils/loadImage";
 import EducationPage from "./pages/education";
 import AchievementsPage from "./pages/achievements";
 import FunFactsPage from "./pages/fun-facts";
@@ -16,6 +15,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
 import ContactPage from "./pages/contact";
 import { Toaster } from "react-hot-toast";
+import ResumePage from "./resume/Resume";
 
 const generateRandomCircles = (count = 5) => {
     return Array.from({ length: count }, (_, i) => ({
@@ -49,7 +49,7 @@ const App = () => {
                             height: size,
                             opacity,
                         }}
-                        className={`absolute rounded-full blur-3xl ${color}`}
+                        className={`decorating-circle absolute rounded-full blur-3xl ${color}`}
                     />
                 ))}
             <Toaster position="bottom-center" reverseOrder={false} />
@@ -91,11 +91,8 @@ const App = () => {
                         path="/portfolio/contact"
                         element={<ContactPage />}
                     />
+                    <Route path="/portfolio/resume" element={<ResumePage />} />
                 </Routes>
-                <img
-                    className="w-full h-40"
-                    src={loadImage("images/wave.png")}
-                />
                 <Footer />
             </div>
         </div>

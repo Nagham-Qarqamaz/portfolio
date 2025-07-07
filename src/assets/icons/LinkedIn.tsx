@@ -1,7 +1,7 @@
-function LinkedIn() {
+function LinkedIn({ className = "" }: { className?: string }) {
     return (
         <svg
-            className="fill-current text-pumpkin w-5 h-5 sm:w-8 sm:h-8"
+            className={`fill-current text-pumpkin w-5 h-5 sm:w-8 sm:h-8 ${className}`}
             viewBox="0 0 32 32"
             version="1.1"
         >

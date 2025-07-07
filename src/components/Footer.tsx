@@ -1,9 +1,11 @@
+import { loadImage } from "../utils/loadImage";
 import { navItems, NavItem } from "./navLinks";
 
 export default function Footer() {
     return (
-        <footer className="bg-pumpkin text-white pb-8 px-4">
-            <div className="max-w-6xl mx-auto space-y-6 text-sm">
+        <footer>
+            <img className="w-full h-40" src={loadImage("images/wave.png")} />
+            <div className="bg-pumpkin text-white pb-8 px-4 max-w-6xl mx-auto space-y-6 text-sm">
                 <ul className="flex justify-center flex-wrap gap-x-4 gap-y-2">
                     {navItems.map((item, index) => (
                         <NavItem

@@ -1,7 +1,7 @@
-function Phone() {
+function Phone({ className = "" }: { className?: string }) {
     return (
         <svg
-            className="fill-current text-pumpkin w-5 h-5 sm:w-8 sm:h-8"
+            className={`fill-current text-pumpkin w-5 h-5 sm:w-8 sm:h-8 ${className}`}
             version="1.1"
             id="_x32_"
             viewBox="0 0 512 512"

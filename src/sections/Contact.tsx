@@ -78,6 +78,7 @@ const Contact = () => {
                                 name="message"
                                 value={form.message}
                                 onChange={handleChange}
+                                rows={4}
                                 className="text-[#000] w-full border p-2 rounded"
                                 required
                             />

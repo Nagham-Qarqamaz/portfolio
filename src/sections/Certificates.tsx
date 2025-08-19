@@ -15,7 +15,7 @@ function Certificates() {
                         theme == "light"
                             ? "text-primary-900"
                             : "shadow-pumpkin bg-secondary-900"
-                    } overflow-hidden p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem] mt-16`}
+                    } overflow-hidden p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem] mb-16`}
                 >
                     <div>
                         <div className="text-3xl font-semibold mb-6">

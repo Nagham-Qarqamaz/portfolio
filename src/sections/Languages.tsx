@@ -8,12 +8,22 @@ function Languages() {
 		{
 			language: "English",
 			proficiency: "C1 Level",
-			prof_desc: "Full working proficiency",
+			prof_desc: "Full Professional Proficiency",
 		},
 		{
 			language: "Spanish",
 			proficiency: "B1 Level",
-			prof_desc: "Limited working proficiency",
+			prof_desc: "Limited Working Proficiency",
+		},
+		{
+			language: "French",
+			proficiency: "School Level",
+			prof_desc: "Elementary Proficiency",
+		},
+		{
+			language: "Korean",
+			proficiency: "Basic",
+			prof_desc: "Reading & Writing (Hangul)",
 		},
 	];
 

@@ -3,7 +3,7 @@ import ResumeHeader from "./ResumeHeader";
 
 const ResumePage = () => {
     return (
-        <div className="p-20">
+        <div className="p-20 text-black">
             <style>
                 {`
                     .decorating-circle, header, footer {
@@ -11,6 +11,7 @@ const ResumePage = () => {
                     }
                     #root > div{
                         background: #FFFFFF;
+                        color: #000000;
                     }
                     
                 `}

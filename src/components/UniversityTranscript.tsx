@@ -3,8 +3,8 @@ import { university_transcript } from "../utils/university_transcript";
 const UniversityTranscript = () => {
     return (
         <div>
-            <h3 className="text-[28px] font-semibold mb-4">
-                University Transcript
+            <h3 className="text-2xl font-semibold mb-4">
+                Transcript of Grades
             </h3>
             <div className="mb-8">
                 <p>

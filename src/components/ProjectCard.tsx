@@ -1,7 +1,7 @@
 import FadeIn from "./animation/FadeIn";
 import SimpleCard from "./SimpleCard";
-
 interface ProjectCardProps {
+    id?: number;
     name?: string;
     company?: string;
     description?: string;
@@ -17,7 +17,7 @@ function ProjectCard({
     videoURL,
 }: ProjectCardProps) {
     return (
-        <SimpleCard>
+        <SimpleCard hoverEffect={false}>
             <div className="flex flex-col justify-between h-full">
                 <div className="text-center mb-4">
                     {name && <h3 className="text-xl font-semibold">{name}</h3>}
@@ -51,7 +51,7 @@ function ProjectCard({
                 </div>
                 {videoURL && (
                     <iframe
-                        className="w-full h-[19rem] rounded-xl"
+                        className="w-full h-[19rem] rounded-xl mt-4"
                         src={videoURL}
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"

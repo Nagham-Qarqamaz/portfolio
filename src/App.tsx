@@ -3,6 +3,7 @@ import { useTheme } from "./contexts/ThemeContext";
 import { useMemo } from "react";
 import HomePage from "./pages/home";
 import ProjectsPage from "./pages/projects";
+import ProjectDetail from "./pages/ProjectDetail";
 import CertificatesPage from "./pages/certificates";
 import SkillsPage from "./pages/skills";
 import ExperiencePage from "./pages/experience";
@@ -16,6 +17,8 @@ import Footer from "./components/Footer";
 import ContactPage from "./pages/contact";
 import { Toaster } from "react-hot-toast";
 import ResumePage from "./resume/Resume";
+import ResumeAcademic from "./resume/ResumeAcademic";
+import NotFound from "./pages/NotFound";
 
 const generateRandomCircles = (count = 5) => {
     return Array.from({ length: count }, (_, i) => ({
@@ -68,6 +71,10 @@ const App = () => {
                         element={<ProjectsPage />}
                     />
                     <Route
+                        path="/portfolio/projects/:id"
+                        element={<ProjectDetail />}
+                    />
+                    <Route
                         path="/portfolio/education"
                         element={<EducationPage />}
                     />
@@ -92,6 +99,8 @@ const App = () => {
                         element={<ContactPage />}
                     />
                     <Route path="/portfolio/resume" element={<ResumePage />} />
+                    <Route path="/portfolio/resume-academic" element={<ResumeAcademic />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
                 <Footer />
             </div>

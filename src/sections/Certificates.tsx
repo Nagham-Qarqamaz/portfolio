@@ -1,8 +1,7 @@
 import FadeIn from "../components/animation/FadeIn";
-import ImageCard from "../components/ImageCard";
+import PdfCard from "../components/PdfCard";
 import Section from "../components/Section";
 import { useTheme } from "../contexts/ThemeContext";
-import { loadImage } from "../utils/loadImage";
 
 function Certificates() {
     const { theme } = useTheme();
@@ -77,14 +76,14 @@ function Certificates() {
                                 } overflow-hidden p-4 sm:p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
                             >
                                 <div className="text-lg font-semibold mb-6">
-                                    The 2021 International Collegiate
+                                    The 2022 International Collegiate
                                     Programming Contest
                                 </div>
                                 <div className="hidden sm:grid justify-self-center sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                                    {icpc2021}
+                                    {icpc2022}
                                 </div>
                                 <div className="sm:hidden flex flex-wrap justify-center gap-4">
-                                    {icpc2021}
+                                    {icpc2022}
                                 </div>
                             </div>
                         </div>
@@ -101,7 +100,7 @@ function Certificates() {
                 >
                     <div>
                         <div className="text-3xl font-semibold mb-6">
-                            Al-Basel Certificates for Academic Excellence
+                            Academic Outstanding Certificates
                         </div>
                         <div className="hidden sm:grid justify-self-center sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
                             {academicExcellenceCertificates}
@@ -112,53 +111,62 @@ function Certificates() {
                     </div>
                 </div>
             </FadeIn>
+            <FadeIn>
+                <div
+                    className={`${
+                        theme == "light"
+                            ? "text-primary-900"
+                            : "shadow-pumpkin bg-secondary-900"
+                    } overflow-hidden p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem] mt-16`}
+                >
+                    <div>
+                        <div className="text-3xl font-semibold mb-6">
+                            University Certificates
+                        </div>
+                        <div className="hidden sm:grid justify-self-center sm:grid-cols-2 md:grid-cols-3 gap-4">
+                            {universityCertificates}
+                        </div>
+                        <div className="sm:hidden flex flex-wrap justify-center gap-4">
+                            {universityCertificates}
+                        </div>
+                    </div>
+                </div>
+            </FadeIn>
+            <FadeIn>
+                <div
+                    className={`${
+                        theme == "light"
+                            ? "text-primary-900"
+                            : "shadow-pumpkin bg-secondary-900"
+                    } overflow-hidden p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem] mt-16`}
+                >
+                    <div>
+                        <div className="text-3xl font-semibold mb-6">
+                            High School Certificates
+                        </div>
+                        <div className="hidden sm:grid justify-self-center sm:grid-cols-2 gap-4">
+                            {highSchoolCertificates}
+                        </div>
+                        <div className="sm:hidden flex flex-wrap justify-center gap-4">
+                            {highSchoolCertificates}
+                        </div>
+                    </div>
+                </div>
+            </FadeIn>
         </Section>
     );
 }
 
 export default Certificates;
 
-const academicExcellenceCertificates = (
-    <>
-        <ImageCard
-            src={loadImage("certificates/Al-Basel Certificate - 1st year.jpg")}
-            title="2017 / 2018"
-        />
-
-        <ImageCard
-            src={loadImage("certificates/Al-Basel Certificate - 2nd year.jpg")}
-            title="2018 / 2019"
-        />
-
-        <ImageCard
-            src={loadImage("certificates/Al-Basel Certificate - 3rd year.jpg")}
-            title="2019 / 2020"
-        />
-
-        <ImageCard
-            src={loadImage("certificates/Al-Basel Certificate - 4th year.jpg")}
-            title="2020 / 2021"
-        />
-
-        <ImageCard
-            src={loadImage("certificates/Al-Basel Certificate - 5th year.jpg")}
-            title="2021 / 2022"
-        />
-    </>
-);
-
 const icpc2018 = (
     <>
-        <ImageCard
-            src={loadImage(
-                "certificates/ICPC 2018 - TCPC - Fifty Eighth Place.jpg"
-            )}
+        <PdfCard
+            src="https://drive.google.com/file/d/1yOUu_ugBDhia143sGRzz_tqFwxFnrmVa/view?usp=drive_link"
             title="Tishreen University"
         />
-        <ImageCard
-            src={loadImage(
-                "certificates/ICPC 2018 - SCPC - Sixteenth Place.jpg"
-            )}
+        <PdfCard
+            src="https://drive.google.com/file/d/1TIzEsuN9N87fSKr_cApxW7PZ0QUBINVk/view?usp=drive_link"
             title="SCPC: Syrian"
         />
     </>
@@ -166,14 +174,12 @@ const icpc2018 = (
 
 const icpc2019 = (
     <>
-        <ImageCard
-            src={loadImage(
-                "certificates/ICPC 2019 - TCPC - Eighteenth Place.jpg"
-            )}
+        <PdfCard
+            src="https://drive.google.com/file/d/1qYHabPucKVRbvpN807oC8VhdDwJBuK8B/view?usp=drive_link"
             title="Tishreen University"
         />
-        <ImageCard
-            src={loadImage("certificates/ICPC 2019 - SCPC - Eighth Place.jpg")}
+        <PdfCard
+            src="https://drive.google.com/file/d/1o-R3FrsHU2zQK6D0N0GBFCpob74U8xuw/view?usp=drive_link"
             title="SCPC: Syrian"
         />
     </>
@@ -181,54 +187,105 @@ const icpc2019 = (
 
 const girlsACPC2020 = (
     <>
-        <ImageCard
-            src={loadImage("certificates/GirlsACPC 2020 - Fourth Place.jpg")}
+        <PdfCard
+            src="https://drive.google.com/file/d/1bNRpZLROCasslgfP7YVtZdD1TpTRzx3c/view?usp=drive_link"
             title="Fourth Place"
         />
 
-        <ImageCard
-            src={loadImage(
-                "certificates/GirlsACPC 2020 - Extreme Programmers.jpg"
-            )}
+        <PdfCard
+            src="https://drive.google.com/file/d/1k4bZ_zU8ovfrR49hzvA0TumRBVekfJm_/view?usp=drive_link"
             title="Extreme Programmers"
         />
 
-        <ImageCard
-            src={loadImage(
-                "certificates/GirlsACPC 2020 - Solid Programmers.jpg"
-            )}
+        <PdfCard
+            src="https://drive.google.com/file/d/1A7jHtEwZ2T6C74Vng-52kHOE7F9Whm54/view?usp=drive_link"
             title="Solid Programmers"
         />
 
-        <ImageCard
-            src={loadImage("certificates/GirlsACPC 2020 - Steadfast Gurus.jpg")}
+        <PdfCard
+            src="https://drive.google.com/file/d/17OpQoGrx-6AdThCCYhFfQPrOV34m2aKl/view?usp=drive_link"
             title="Steadfast Gurus"
         />
 
-        <ImageCard
-            src={loadImage(
-                "certificates/GirlsACPC 2020 - First to solve problem A.jpg"
-            )}
+        <PdfCard
+            src="https://drive.google.com/file/d/1IUV5dYJsEkyUitRIfcwLEAuTxwMS7FmK/view?usp=drive_link"
             title="First to solve problem A"
         />
     </>
 );
 
-const icpc2021 = (
+const icpc2022 = (
     <>
-        <ImageCard
-            src={loadImage("certificates/ICPC 2021 - TCPC - Fourth Place.jpg")}
+        <PdfCard
+            src="https://drive.google.com/file/d/1f8gRedctZNoP8as5V9aV4fp48yleoELT/view?usp=drive_link"
             title="Tishreen University"
         />
-        <ImageCard
-            src={loadImage("certificates/ICPC 2021 - SCPC - Seventh Place.jpg")}
+        <PdfCard
+            src="https://drive.google.com/file/d/1jyvGxdESV68OzpB0To2_BfSIELyP1xwa/view?usp=drive_link"
             title="SCPC: Syrian"
         />
-        <ImageCard
-            src={loadImage(
-                "certificates/ICPC 2021 - ACPC - Fifty Seventh Place.jpg"
-            )}
+        <PdfCard
+            src="https://drive.google.com/file/d/13t779-hwczNUrCF4gdDY3p3pQSwesitE/view?usp=drive_link"
             title="ACPC: Arabic"
+        />
+    </>
+);
+
+const academicExcellenceCertificates = (
+    <>
+        <PdfCard
+            src="https://drive.google.com/file/d/1BBRqo8204JToOmeuTSu6-uY8JfFNr3VM/view?usp=drive_link"
+            title="2017 / 2018"
+        />
+
+        <PdfCard
+            src="https://drive.google.com/file/d/1wilDS5L3kqUtACHyZL4kEaNeGHlLKwe4/view?usp=drive_link"
+            title="2018 / 2019"
+        />
+
+        <PdfCard
+            src="https://drive.google.com/file/d/1HliJy0vEqCOo_uC8rNWmFmqAVn5Tqv3P/view?usp=drive_link"
+            title="2019 / 2020"
+        />
+
+        <PdfCard
+            src="https://drive.google.com/file/d/1tPGbclkRuQoqvvxDZw4km_f8ZoXX_ePn/view?usp=drive_link"
+            title="2020 / 2021"
+        />
+
+        <PdfCard
+            src="https://drive.google.com/file/d/18aCO2mIrE0qRPJ1wcEoUN4s8mwQ_I7IE/view?usp=drive_link"
+            title="2021 / 2022"
+        />
+    </>
+);
+
+const universityCertificates = (
+    <>
+        <PdfCard
+            src="https://drive.google.com/file/d/1k2Qul8MPJCqazq4bx96vIPH8CBRNeZQd/view?usp=drive_link"
+            title="Bachelor's Certificate"
+        />
+        <PdfCard
+            src="https://drive.google.com/file/d/1U7OOiAKb22TOzmRhY0Z3Py4gTDHsTarN/view?usp=drive_link"
+            title="Graduation Certificate"
+        />
+        <PdfCard
+            src="https://drive.google.com/file/d/1SxEBPgwK9yFYziMQeJV62DHaKgidw4u0/view?usp=drive_link"
+            title="Transcript of Grades"
+        />
+    </>
+);
+
+const highSchoolCertificates = (
+    <>
+        <PdfCard
+            src="https://drive.google.com/file/d/1LX9wHAcuHoAUd9MO9Ax8VkK-SFxY2Z9Y/view?usp=drive_link"
+            title="High School Certificate"
+        />
+        <PdfCard
+            src="https://drive.google.com/file/d/1UkuT0vAQ14xYKFGcmwBpFMJU3MNQ2o1G/view?usp=drive_link"
+            title="General High School Certificate"
         />
     </>
 );

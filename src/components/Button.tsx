@@ -33,7 +33,7 @@ function Button({
             {loading ? (
                 <>
                     <img
-                        className="w-7 h-7"
+                        className="w-6 h-6"
                         src={loadImage("images/loading.gif")}
                     />
                     {loadingText}

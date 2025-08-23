@@ -8,6 +8,7 @@ import { useTheme } from "../contexts/ThemeContext";
 import UniversityEducation from "../components/UniversityEducation";
 import UniversityProjects from "../components/UniversityProjects";
 import HighSchoolEducation from "../components/HighSchoolEducation";
+import ThemedContainer from "../components/ThemedContainer";
 
 const Education = () => {
     const navigate = useNavigate();
@@ -16,13 +17,7 @@ const Education = () => {
     return (
         <Section glow={false} title="Education">
             <div className="flex flex-col gap-8">
-                <div
-                    className={`${
-                        theme == "light"
-                            ? "text-primary-900"
-                            : "shadow-pumpkin bg-secondary-900"
-                    } overflow-hidden py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
-                >
+                <ThemedContainer>
                     <div className="text-3xl font-semibold mb-6">
                         Educational Certificates
                     </div>
@@ -46,15 +41,9 @@ const Education = () => {
                             />
                         </div>
                     </SimpleCard>
-                </div>
+                </ThemedContainer>
 
-                <div
-                    className={`${
-                        theme == "light"
-                            ? "text-primary-900"
-                            : "shadow-pumpkin bg-secondary-900"
-                    } overflow-hidden py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
-                >
+                <ThemedContainer>
                     <div className="text-3xl font-semibold mb-6">
                         University Education
                     </div>
@@ -65,15 +54,9 @@ const Education = () => {
                             <UniversityTranscript />
                         </SimpleCard>
                     </div>
-                </div>
+                </ThemedContainer>
 
-                <div
-                    className={`${
-                        theme == "light"
-                            ? "text-primary-900"
-                            : "shadow-pumpkin bg-secondary-900"
-                    } overflow-hidden py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
-                >
+                <ThemedContainer>
                     <div className="text-3xl font-semibold mb-6">
                         Secondary School Education
                     </div>
@@ -83,7 +66,7 @@ const Education = () => {
                             <HighschoolTranscript />
                         </SimpleCard>
                     </div>
-                </div>
+                </ThemedContainer>
             </div>
         </Section>
     );

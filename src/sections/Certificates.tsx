@@ -1,21 +1,15 @@
 import FadeIn from "../components/animation/FadeIn";
 import PdfCard from "../components/PdfCard";
 import Section from "../components/Section";
-import { useTheme } from "../contexts/ThemeContext";
+import ThemedContainer from "../components/ThemedContainer";
+import ThemedInnerContainer from "../components/ThemedInnerContainer";
 
 function Certificates() {
-    const { theme } = useTheme();
 
     return (
         <Section glow={false} title="Certificates">
             <FadeIn>
-                <div
-                    className={`${
-                        theme == "light"
-                            ? "text-primary-900"
-                            : "shadow-pumpkin bg-secondary-900"
-                    } overflow-hidden py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem] mb-16`}
-                >
+                <ThemedContainer className="mb-16">
                     <div>
                         <div className="text-3xl font-semibold mb-6">
                             International Collegiate Programming Contest
@@ -23,13 +17,7 @@ function Certificates() {
                         </div>
                         <div className="flex flex-col gap-12">
                             <div className="flex flex-col lg:flex-row lg:justify-between gap-12">
-                                <div
-                                    className={`${
-                                        theme == "light"
-                                            ? ""
-                                            : "bg-secondary-700"
-                                    } overflow-hidden p-4 sm:py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
-                                >
+                                <ThemedInnerContainer>
                                     <div className="text-lg font-semibold mb-6">
                                         The 2018 International Collegiate
                                         Programming Contest
@@ -37,14 +25,8 @@ function Certificates() {
                                     <div className="flex flex-wrap justify-center gap-4">
                                         {icpc2018}
                                     </div>
-                                </div>
-                                <div
-                                    className={`${
-                                        theme == "light"
-                                            ? ""
-                                            : "bg-secondary-700"
-                                    } overflow-hidden p-4 sm:py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
-                                >
+                                </ThemedInnerContainer>
+                                <ThemedInnerContainer>
                                     <div className="text-lg font-semibold mb-6">
                                         The 2019 International Collegiate
                                         Programming Contest
@@ -52,13 +34,9 @@ function Certificates() {
                                     <div className="flex flex-wrap justify-center gap-4">
                                         {icpc2019}
                                     </div>
-                                </div>
+                                </ThemedInnerContainer>
                             </div>
-                            <div
-                                className={`${
-                                    theme == "light" ? "" : "bg-secondary-700"
-                                } overflow-hidden p-4 sm:py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
-                            >
+                            <ThemedInnerContainer>
                                 <div className="text-lg font-semibold mb-6">
                                     The 2020 Africa and Arab Collegiate
                                     Programming Contest for GIRLS
@@ -69,12 +47,8 @@ function Certificates() {
                                 <div className="sm:hidden flex flex-wrap justify-center gap-4">
                                     {girlsACPC2020}
                                 </div>
-                            </div>
-                            <div
-                                className={`${
-                                    theme == "light" ? "" : "bg-secondary-700"
-                                } overflow-hidden p-4 sm:py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
-                            >
+                            </ThemedInnerContainer>
+                            <ThemedInnerContainer>
                                 <div className="text-lg font-semibold mb-6">
                                     The 2022 International Collegiate
                                     Programming Contest
@@ -85,19 +59,13 @@ function Certificates() {
                                 <div className="sm:hidden flex flex-wrap justify-center gap-4">
                                     {icpc2022}
                                 </div>
-                            </div>
+                            </ThemedInnerContainer>
                         </div>
                     </div>
-                </div>
+                </ThemedContainer>
             </FadeIn>
             <FadeIn>
-                <div
-                    className={`${
-                        theme == "light"
-                            ? "text-primary-900"
-                            : "shadow-pumpkin bg-secondary-900"
-                    } overflow-hidden py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
-                >
+                <ThemedContainer>
                     <div>
                         <div className="text-3xl font-semibold mb-6">
                             Academic Outstanding Certificates
@@ -109,16 +77,10 @@ function Certificates() {
                             {academicExcellenceCertificates}
                         </div>
                     </div>
-                </div>
+                </ThemedContainer>
             </FadeIn>
             <FadeIn>
-                <div
-                    className={`${
-                        theme == "light"
-                            ? "text-primary-900"
-                            : "shadow-pumpkin bg-secondary-900"
-                    } overflow-hidden py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem] mt-16`}
-                >
+                <ThemedContainer className="mt-16">
                     <div>
                         <div className="text-3xl font-semibold mb-6">
                             University Certificates
@@ -130,16 +92,10 @@ function Certificates() {
                             {universityCertificates}
                         </div>
                     </div>
-                </div>
+                </ThemedContainer>
             </FadeIn>
             <FadeIn>
-                <div
-                    className={`${
-                        theme == "light"
-                            ? "text-primary-900"
-                            : "shadow-pumpkin bg-secondary-900"
-                    } overflow-hidden py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem] mt-16`}
-                >
+                <ThemedContainer className="mt-16">
                     <div>
                         <div className="text-3xl font-semibold mb-6">
                             High School Certificates
@@ -151,7 +107,7 @@ function Certificates() {
                             {highSchoolCertificates}
                         </div>
                     </div>
-                </div>
+                </ThemedContainer>
             </FadeIn>
         </Section>
     );

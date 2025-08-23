@@ -38,7 +38,7 @@ function ProjectCard({
                                             className={`text-center text-primary-800 rounded-xl p-[6px] font-[800] ${
                                                 skill.isSelected
                                                     ? "bg-white"
-                                                    : "bg-gray-400"
+                                                    : "bg-secondary-400"
                                             }`}
                                         >
                                             {skill.name}

@@ -6,6 +6,7 @@ interface ButtonProps {
     loading: boolean;
     loadingText: string;
     variant?: "primary" | "white";
+    fixedWidth?: boolean;
 }
 
 function Button({
@@ -14,11 +15,14 @@ function Button({
     loading,
     loadingText,
     variant = "primary",
+    fixedWidth = false,
 }: ButtonProps) {
     return (
         <button
             onClick={onClick}
-            className={`font-normal hover:font-bold mt-6 text-lg px-6 py-3 rounded-full transform transition-transform duration-300 inline-flex items-center gap-2 ${
+            className={`font-normal hover:font-bold px-6 py-3 rounded-full transform transition-transform duration-300 inline-flex items-center justify-center gap-2 ${
+                fixedWidth ? "w-[18rem]" : ""
+            } ${
                 variant == "primary" &&
                 "bg-primary-500 hover:bg-primary-600 text-white"
             } ${

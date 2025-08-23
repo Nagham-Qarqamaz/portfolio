@@ -15,7 +15,7 @@ const starkTechnologies = (
 						Freelance Web Developer
 					</h3>
 					<span className="text-pumpkin-100 font-bold">
-						11/2024 – Present
+						11/2024 – 07/2025
 					</span>
 				</div>
 				<p className="italic text-pumpkin-100">
@@ -55,12 +55,13 @@ const eyes360 = (
 					</p>
 					<ul className="list-disc list-inside mt-2 space-y-1 text-left">
 						<li className="custom-bullet">
-							Working on WebGL projects, integrating 3D rendering
-							into web applications.
+							Developed makeup try-on feature: eyebrow coloring using Google Face Landmarks with WebGL.
 						</li>
 						<li className="custom-bullet">
-							Delivering optimized, interactive frontend
-							solutions.
+							Built sunglasses try-on system with face tracking and 3D model positioning using Babylon.js.
+						</li>
+						<li className="custom-bullet">
+							Created watch try-on feature using hand tracking with Google Landmarks.
 						</li>
 					</ul>
 				</SimpleCard>

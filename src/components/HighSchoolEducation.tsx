@@ -5,13 +5,13 @@ const HighSchoolEducation = () => {
         <SimpleCard hoverEffect={false}>
             <div className="text-center mb-6">
                 <div className="text-left max-w-4xl mx-auto">
-                    <div className="flex flex-wrap gap-8 justify-between items-center mb-4">
+                    <div className="space-y-4">
                         <h3 className="text-2xl font-semibold">
                             General Certificate of High School Education
                         </h3>
-                        <span className="text-pumpkin-100 font-bold text-lg">
+                        <div className="text-pumpkin-100 font-bold text-lg">
                             2015 – 2017
-                        </span>
+                        </div>
                     </div>
                     <p className="italic text-pumpkin-100 text-lg mb-4">
                         Martyr Jihad Nasour Secondary School, Latakia, Syria

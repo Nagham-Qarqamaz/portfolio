@@ -16,37 +16,40 @@ const Education = () => {
 
     return (
         <Section glow={false} title="Education">
-            <div className="flex flex-col gap-8 space-y-16">
+            <div className="flex flex-col gap-8">
                 <FadeIn>
-                    <SimpleCard hoverEffect={false}>
-                        <div className="text-center p-2">
-                            <h3 className="text-2xl font-semibold mb-4">
-                                Educational Certificates
-                            </h3>
-                            <p
-                                className={`text-lg ${
-                                    theme === "light"
-                                        ? "text-gray-700"
-                                        : "text-gray-300"
-                                }`}
-                            >
-                                View all my educational certificates, academic
-                                excellence awards, graduation documents, and
-                                collegiate programming contest achievements from
-                                my university period in the dedicated
-                                certificates section.
-                            </p>
-                            <Button
-                                text="View All Certificates"
-                                onClick={() =>
-                                    navigate("/portfolio/certificates")
-                                }
-                                loading={false}
-                                loadingText=""
-                                variant="white"
-                            />
+                    <div
+                        className={`${
+                            theme == "light"
+                                ? "text-primary-900"
+                                : "shadow-pumpkin bg-secondary-900"
+                        } overflow-hidden py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
+                    >
+                        <div className="text-3xl font-semibold mb-6">
+                            Educational Certificates
                         </div>
-                    </SimpleCard>
+                        <SimpleCard hoverEffect={false}>
+                            <div className="text-center p-2">
+                                <p className="text-lg">
+                                    View all my educational certificates,
+                                    academic excellence awards, graduation
+                                    documents, and collegiate programming
+                                    contest achievements from my university
+                                    period in the dedicated certificates
+                                    section.
+                                </p>
+                                <Button
+                                    text="View All Certificates"
+                                    onClick={() =>
+                                        navigate("/portfolio/certificates")
+                                    }
+                                    loading={false}
+                                    loadingText=""
+                                    variant="white"
+                                />
+                            </div>
+                        </SimpleCard>
+                    </div>
                 </FadeIn>
 
                 <FadeIn>
@@ -55,7 +58,7 @@ const Education = () => {
                             theme == "light"
                                 ? "text-primary-900"
                                 : "shadow-pumpkin bg-secondary-900"
-                        } overflow-hidden p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
+                        } overflow-hidden py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
                     >
                         <div className="text-3xl font-semibold mb-6">
                             University Education
@@ -82,7 +85,7 @@ const Education = () => {
                             theme == "light"
                                 ? "text-primary-900"
                                 : "shadow-pumpkin bg-secondary-900"
-                        } overflow-hidden p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
+                        } overflow-hidden py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
                     >
                         <div className="text-3xl font-semibold mb-6">
                             Secondary School Education

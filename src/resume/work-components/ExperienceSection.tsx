@@ -1,5 +1,5 @@
 import ExperienceCard from "./ExperienceCard";
-import ResumeSectionTitle from "./ResumeSectionTitle";
+import ResumeSectionTitle from "../ResumeSectionTitle";
 
 function ExperienceSection() {
     return (
@@ -10,7 +10,7 @@ function ExperienceSection() {
                     <ExperienceCard
                         title="Web Developer"
                         organization="Anon"
-                        date="11/2024 - Present"
+                        date="11/2024 - 07/2025"
                         location="Serbia (Remote)"
                         bulletPoints={[
                             "Built a full-scale bilingual Next.js website with modern UI/UX and responsive design, delivering 20+ pages within 1 month.",
@@ -25,8 +25,9 @@ function ExperienceSection() {
                         date="08/2024 - 01/2025"
                         location="Cairo, Egypt (Remote)"
                         bulletPoints={[
-                            "Developed 3 interactive 3D modules using Babylon.js and WebGL.",
-                            "Implemented advanced face tracking using Google Face Landmark Detection with real-time accuracy and motion latency under 50ms.",
+                            "Developed makeup try-on feature: eyebrow color application using Google Face Landmarks with WebGL for real-time eyebrow coloring.",
+                            "Built sunglasses try-on system by detecting face movements with Google Landmarks and adjusting 3D model position/rotation using Babylon.js.",
+                            "Created watch try-on feature using hand tracking with Google Landmarks to position and adjust watch models on user's hand.",
                         ]}
                     />
                 </div>

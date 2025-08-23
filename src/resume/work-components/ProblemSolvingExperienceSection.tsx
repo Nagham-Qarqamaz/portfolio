@@ -1,5 +1,5 @@
 import ExperienceCard from "./ExperienceCard";
-import ResumeSectionTitle from "./ResumeSectionTitle";
+import ResumeSectionTitle from "../ResumeSectionTitle";
 
 function ProblemSolvingExperienceSection() {
     return (

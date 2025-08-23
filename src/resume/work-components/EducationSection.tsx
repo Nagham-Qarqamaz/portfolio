@@ -1,5 +1,5 @@
 import ExperienceCard from "./ExperienceCard";
-import ResumeSectionTitle from "./ResumeSectionTitle";
+import ResumeSectionTitle from "../ResumeSectionTitle";
 
 function EducationSection() {
     return (
@@ -13,7 +13,7 @@ function EducationSection() {
                     location="Latakia, Syria"
                     bulletPoints={[
                         "Valedictorian with an average of 92.08% (approx. GPA: 3.8/4.0).",
-                        "Awarded Al-Basel Certificates for Academic Excellence consecutively from 2017 to 2022.",
+                        "Awarded Al-Basel Certificates for Academic Excellence consecutively from 2018 to 2022.",
                         "Obtained deep experience in algorithms, data structures, and complexity through 4 years of competitive programming contests.",
                     ]}
                 />

@@ -17,13 +17,17 @@ const UniversityEducation = () => {
                     <p className="italic text-pumpkin-100 text-lg mb-4">
                         Tishreen University, Latakia, Syria
                     </p>
-                    <div className="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <h4 className="font-semibold text-lg mb-2">
-                                Academic Excellence
-                            </h4>
-                            <ul className="list-disc list-inside space-y-1">
-                                <li>Graduated with Honors (Valedictorian)</li>
+                    <div>
+                        <h4 className="font-semibold text-lg mb-2">
+                            Academic Excellence
+                        </h4>
+                        <div className="grid md:grid-cols-2 gap-x-12 px-4">
+                            <ul className="list-disc space-y-1">
+                                <li>
+                                    Graduated with Honors (Valedictorian),
+                                    Unbroken record as #1 student across all
+                                    years of university
+                                </li>
                                 <li>Overall average: 92.08%</li>
                                 <li>9 perfect scores (100%)</li>
                                 <li>
@@ -31,17 +35,19 @@ const UniversityEducation = () => {
                                     (2018-2022)
                                 </li>
                             </ul>
-                        </div>
-                        <div>
-                            <h4 className="font-semibold text-lg mb-2">
-                                Key Subjects
-                            </h4>
-                            <ul className="list-disc list-inside space-y-1">
-                                <li>Algorithms & Data Structures</li>
-                                <li>Software Engineering (96%)</li>
-                                <li>Operating Systems (99%)</li>
-                                <li>Databases (98%)</li>
-                                <li>Computer Graphics & 3D Development</li>
+                            <ul className="list-disc space-y-1">
+                                <li>
+                                    Built innovative university projects:
+                                    Interactive online judge with WebGL
+                                    interface (96%) and realistic 3D virtual
+                                    tour of faculty building (97%)
+                                </li>
+                                <li>
+                                    Active participation in collegiate
+                                    programming competitions enhanced core
+                                    problem-solving and analytical reasoning
+                                    abilities
+                                </li>
                             </ul>
                         </div>
                     </div>

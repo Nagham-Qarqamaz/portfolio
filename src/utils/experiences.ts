@@ -1,23 +1,24 @@
 export const experiences = [
     {
         title: "Freelance Web Developer",
-        date: "11/2024 – Present",
+        date: "11/2024 – 07/2025",
         location: "Stark Technologies, Serbia (Remote)",
         bulletPoints: [
             "Developing diverse projects using React and Next.js.",
-            "Crafting high-performance, interactive frontend experiences."
+            "Crafting high-performance, interactive frontend experiences.",
         ],
-        className: ""
+        className: "",
     },
     {
         title: "Freelance Web Developer",
-        date: "08/2024 – Present",
+        date: "08/2024 – 01/2025",
         location: "Eyes360, Cairo, Egypt (Remote)",
         bulletPoints: [
-            "Working on WebGL projects, integrating 3D rendering into web applications.",
-            "Delivering optimized, interactive frontend solutions."
+            "Developed makeup try-on feature: eyebrow coloring using Google Face Landmarks with WebGL.",
+            "Built sunglasses try-on system with face tracking and 3D model positioning using Babylon.js.",
+            "Created watch try-on feature using hand tracking with Google Landmarks.",
         ],
-        className: "mt-48 lg:mt-40"
+        className: "mt-52 xl:mt-40",
     },
     {
         title: "Front-End Web Developer",
@@ -26,9 +27,9 @@ export const experiences = [
         bulletPoints: [
             "Worked in Front-End Development using React, Next.js, and TypeScript.",
             "Involved in 2 projects, enhancing React development skills.",
-            "Utilized RESTful APIs in both projects and integrated Next.js."
+            "Utilized RESTful APIs in both projects and integrated Next.js.",
         ],
-        className: "mt-40 lg:mt-32"
+        className: "mt-56 xl:mt-48",
     },
     {
         title: "Full-Stack Web Developer",
@@ -39,9 +40,9 @@ export const experiences = [
             "Worked on 10+ projects using HTML, CSS, JavaScript.",
             "Developed 5+ projects using PHP, Laravel Framework, Tailwind, and jQuery.",
             "Contributed to 2 projects using Laravel Nova and Google Map API.",
-            "Worked on 5 WordPress projects."
+            "Worked on 5 WordPress projects.",
         ],
-        className: "mt-48 lg:mt-40"
+        className: "mt-40 lg:mt-56 xl:mt-40",
     },
     {
         title: "ICPC Contestant - Problem Setter - Coach",
@@ -52,8 +53,8 @@ export const experiences = [
             "Silver medal in the SCPC 2021.",
             "Golden medal in the Girls ACPC 2020.",
             "Problem Setter at SCPC 2020.",
-            "Expert rank on Codeforces website."
+            "Expert rank on Codeforces website.",
         ],
-        className: "mt-52 lg:mt-44"
-    }
+        className: "mt-[12rem] xl:mt-44",
+    },
 ];

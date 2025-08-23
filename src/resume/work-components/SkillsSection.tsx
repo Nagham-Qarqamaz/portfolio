@@ -1,4 +1,4 @@
-import ResumeSectionTitle from "./ResumeSectionTitle";
+import ResumeSectionTitle from "../ResumeSectionTitle";
 
 function SkillsSection() {
     return (

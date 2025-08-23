@@ -23,7 +23,7 @@ const HighschoolTranscript = () => {
                     {highschool_transcript.average}%
                 </p>
             </div>
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto mb-4">
                 <table className="w-full border-collapse">
                     <thead className="bg-primary-500">
                         <tr>

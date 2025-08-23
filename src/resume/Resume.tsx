@@ -1,5 +1,5 @@
-import ResumeBody from "./ResumeBody";
-import ResumeHeader from "./ResumeHeader";
+import ResumeBody from "./work-components/ResumeBody";
+import ResumeHeader from "./work-components/ResumeHeader";
 
 const ResumePage = () => {
     return (

@@ -1,5 +1,5 @@
-import ResumeSectionTitle from "./ResumeSectionTitle";
-import ResumeUnorderedList from "./ResumeUnorderedList";
+import ResumeSectionTitle from "../ResumeSectionTitle";
+import ResumeUnorderedList from "../ResumeUnorderedList";
 
 function SummarySection() {
     return (

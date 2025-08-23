@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import { useTheme } from "./contexts/ThemeContext";
-import { useMemo } from "react";
 import HomePage from "./pages/home";
 import ProjectsPage from "./pages/projects";
 import ProjectDetail from "./pages/ProjectDetail";
@@ -20,41 +19,17 @@ import ResumePage from "./resume/Resume";
 import ResumeAcademic from "./resume/ResumeAcademic";
 import NotFound from "./pages/NotFound";
 
-const generateRandomCircles = (count = 5) => {
-    return Array.from({ length: count }, (_, i) => ({
-        id: i,
-        left: `${Math.random() * 100}%`,
-        top: `${Math.random() * 100}%`,
-        size: `${Math.random() * 30 + 10}rem`,
-        opacity: Math.random() * 0.1 + 0.2,
-        color: Math.random() > 0.5 ? "bg-primary" : "bg-pumpkin",
-    }));
-};
-
 const App = () => {
     const { theme } = useTheme();
-    const circles = useMemo(() => generateRandomCircles(5), []);
 
     return (
         <div
-            className={`relative overflow-hidden bg-secondary-800 ${
-                theme == "light" ? "text-black" : "text-white"
+            className={`${
+                theme == "light"
+                    ? "text-black bg-[url('/images/background-image.png')] bg-cover bg-fixed"
+                    : "text-white bg-secondary-800"
             }`}
         >
-            {theme == "light" &&
-                circles.map(({ id, left, top, size, opacity, color }) => (
-                    <div
-                        key={id}
-                        style={{
-                            left,
-                            top,
-                            width: size,
-                            height: size,
-                            opacity,
-                        }}
-                        className={`decorating-circle absolute rounded-full blur-3xl ${color}`}
-                    />
-                ))}
             <Toaster position="bottom-center" reverseOrder={false} />
             <div className="relative z-10 min-h-screen">
                 <Header />
@@ -99,7 +74,10 @@ const App = () => {
                         element={<ContactPage />}
                     />
                     <Route path="/portfolio/resume" element={<ResumePage />} />
-                    <Route path="/portfolio/resume-academic" element={<ResumeAcademic />} />
+                    <Route
+                        path="/portfolio/resume-academic"
+                        element={<ResumeAcademic />}
+                    />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
                 <Footer />

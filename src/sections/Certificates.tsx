@@ -14,7 +14,7 @@ function Certificates() {
                         theme == "light"
                             ? "text-primary-900"
                             : "shadow-pumpkin bg-secondary-900"
-                    } overflow-hidden p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem] mb-16`}
+                    } overflow-hidden py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem] mb-16`}
                 >
                     <div>
                         <div className="text-3xl font-semibold mb-6">
@@ -28,7 +28,7 @@ function Certificates() {
                                         theme == "light"
                                             ? ""
                                             : "bg-secondary-700"
-                                    } overflow-hidden p-4 sm:p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
+                                    } overflow-hidden p-4 sm:py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
                                 >
                                     <div className="text-lg font-semibold mb-6">
                                         The 2018 International Collegiate
@@ -43,7 +43,7 @@ function Certificates() {
                                         theme == "light"
                                             ? ""
                                             : "bg-secondary-700"
-                                    } overflow-hidden p-4 sm:p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
+                                    } overflow-hidden p-4 sm:py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
                                 >
                                     <div className="text-lg font-semibold mb-6">
                                         The 2019 International Collegiate
@@ -57,7 +57,7 @@ function Certificates() {
                             <div
                                 className={`${
                                     theme == "light" ? "" : "bg-secondary-700"
-                                } overflow-hidden p-4 sm:p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
+                                } overflow-hidden p-4 sm:py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
                             >
                                 <div className="text-lg font-semibold mb-6">
                                     The 2020 Africa and Arab Collegiate
@@ -73,7 +73,7 @@ function Certificates() {
                             <div
                                 className={`${
                                     theme == "light" ? "" : "bg-secondary-700"
-                                } overflow-hidden p-4 sm:p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
+                                } overflow-hidden p-4 sm:py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
                             >
                                 <div className="text-lg font-semibold mb-6">
                                     The 2022 International Collegiate
@@ -96,7 +96,7 @@ function Certificates() {
                         theme == "light"
                             ? "text-primary-900"
                             : "shadow-pumpkin bg-secondary-900"
-                    } overflow-hidden p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
+                    } overflow-hidden py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem]`}
                 >
                     <div>
                         <div className="text-3xl font-semibold mb-6">
@@ -117,7 +117,7 @@ function Certificates() {
                         theme == "light"
                             ? "text-primary-900"
                             : "shadow-pumpkin bg-secondary-900"
-                    } overflow-hidden p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem] mt-16`}
+                    } overflow-hidden py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem] mt-16`}
                 >
                     <div>
                         <div className="text-3xl font-semibold mb-6">
@@ -138,7 +138,7 @@ function Certificates() {
                         theme == "light"
                             ? "text-primary-900"
                             : "shadow-pumpkin bg-secondary-900"
-                    } overflow-hidden p-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem] mt-16`}
+                    } overflow-hidden py-8 px-4 sm:p-8 rounded-[2rem] sm:rounded-[3rem] mt-16`}
                 >
                     <div>
                         <div className="text-3xl font-semibold mb-6">

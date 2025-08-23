@@ -21,7 +21,7 @@ function PdfCard({ src, title, description }: PdfCardProps) {
                     relative group overflow-hidden rounded-xl p-6 w-[12rem] 
                     ${
                         theme === "light"
-                            ? "bg-white border-2 border-gray-200 hover:border-primary-400 hover:shadow-lg"
+                            ? "bg-white border-2 border-primary-200 hover:border-primary-400 hover:shadow-lg"
                             : "bg-secondary-800 border-2 border-secondary-600 hover:border-primary-400 hover:shadow-lg hover:shadow-primary-500/20"
                     }
                     transition-all duration-300 h-full flex flex-col items-center justify-center min-h-[140px]
@@ -51,23 +51,11 @@ function PdfCard({ src, title, description }: PdfCardProps) {
                         />
                     </svg>
 
-                    <div
-                        className={`font-semibold text-center text-sm ${
-                            theme === "light"
-                                ? "text-gray-800"
-                                : "text-gray-200"
-                        }`}
-                    >
+                    <div className="font-semibold text-center text-sm">
                         {title}
                     </div>
                     {description && (
-                        <div
-                            className={`text-xs mt-1 text-center ${
-                                theme === "light"
-                                    ? "text-gray-600"
-                                    : "text-gray-400"
-                            }`}
-                        >
+                        <div className="text-xs mt-1 text-center">
                             {description}
                         </div>
                     )}

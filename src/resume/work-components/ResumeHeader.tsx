@@ -1,7 +1,7 @@
-import Email from "../assets/icons/Email";
-import LinkedIn from "../assets/icons/LinkedIn";
-import Phone from "../assets/icons/Phone";
-import Website from "../assets/icons/Website";
+import Email from "../../assets/icons/Email";
+import LinkedIn from "../../assets/icons/LinkedIn";
+import Phone from "../../assets/icons/Phone";
+import Website from "../../assets/icons/Website";
 
 const ResumeHeader = () => {
     return (

@@ -1,6 +1,6 @@
-import Date from "../assets/icons/Date";
-import Location from "../assets/icons/Location";
-import ResumeUnorderedList from "./ResumeUnorderedList";
+import Date from "../../assets/icons/Date";
+import Location from "../../assets/icons/Location";
+import ResumeUnorderedList from "../ResumeUnorderedList";
 
 interface ExperienceCardProps {
     title: string;

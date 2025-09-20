@@ -5,7 +5,6 @@ import ThemedContainer from "../components/ThemedContainer";
 import ThemedInnerContainer from "../components/ThemedInnerContainer";
 
 function Certificates() {
-
     return (
         <Section glow={false} title="Certificates">
             <FadeIn>
@@ -50,7 +49,7 @@ function Certificates() {
                             </ThemedInnerContainer>
                             <ThemedInnerContainer>
                                 <div className="text-lg font-semibold mb-6">
-                                    The 2022 International Collegiate
+                                    The 2021 International Collegiate
                                     Programming Contest
                                 </div>
                                 <div className="hidden sm:grid justify-self-center sm:grid-cols-2 lg:grid-cols-3 gap-4">

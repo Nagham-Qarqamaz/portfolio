@@ -17,7 +17,7 @@ export function getProjects() {
             skills: ["OpenGL", "C++"],
         },
         {
-            id: 2, 
+            id: 2,
             name: "University 4th-year Project",
             company: "university",
             description:
@@ -147,7 +147,7 @@ export function getProjects() {
             name: "Patitas",
             company: "Personal / test application",
             description:
-                "Over the course of just 4 days, I built a fully functioning application using Spring Boot for the backend and Angular for the frontend—technologies I had never worked with before. With the help of online tutorials and AI tools, I was able to quickly learn and implement new concepts, demonstrating my ability to adapt and learn fastly. You can check out the project <a class='underline' href='https://github.com/Nagham-Qarqamaz/repo-prueba'>HERE</a>.",
+                "Over the course of just 4 days, I built a fully functioning application using Spring Boot for the backend and Angular for the frontend, technologies I had never worked with before. With the help of online tutorials and AI tools, I was able to quickly learn and implement new concepts, demonstrating my ability to adapt and learn fastly. You can check out the project <a class='underline' href='https://github.com/Nagham-Qarqamaz/repo-prueba'>HERE</a>.",
             videoURL:
                 "https://www.youtube.com/embed/3_p-boncOEs?si=EeLnvLWhSDEZys61",
             order: {
@@ -160,7 +160,8 @@ export function getProjects() {
             id: 12,
             name: "Articalization",
             company: "Personal / test application",
-            description: "In this project, I built a client-side news aggregation application that gathers articles from various external sources using public APIs. Users can filter the news by date, category, search query, and source, with paginated results for easy navigation. They can also customize their experience by adding preferred sources, authors, and categories, tailoring the news feed to their personal interests. You can check out the project <a class='underline' href='https://github.com/Nagham-Qarqamaz/articalization'>HERE</a>.",
+            description:
+                "In this project, I built a client-side news aggregation application that gathers articles from various external sources using public APIs. Users can filter the news by date, category, search query, and source, with paginated results for easy navigation. They can also customize their experience by adding preferred sources, authors, and categories, tailoring the news feed to their personal interests. You can check out the project <a class='underline' href='https://github.com/Nagham-Qarqamaz/articalization'>HERE</a>.",
             videoURL:
                 "https://www.youtube.com/embed/9V-b1aAr0dQ?si=cw-vIE_bUP9ZGdez",
             order: {
@@ -186,5 +187,5 @@ export function getProjects() {
         });
     });
 
-    return { projects, projectsSkills }
+    return { projects, projectsSkills };
 }

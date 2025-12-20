@@ -1,7 +1,6 @@
 import FadeIn from "./animation/FadeIn";
 import SimpleCard from "./SimpleCard";
 interface ProjectCardProps {
-    id?: number;
     name?: string;
     company?: string;
     description?: string;

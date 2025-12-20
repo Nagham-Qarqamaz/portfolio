@@ -8,7 +8,7 @@ import SkillsPage from "./pages/skills";
 import ExperiencePage from "./pages/experience";
 import Header from "./components/Header";
 import EducationPage from "./pages/education";
-import AchievementsPage from "./pages/achievements";
+import IcpcPage from "./pages/icpc";
 import FunFactsPage from "./pages/fun-facts";
 import LanguagesPage from "./pages/languages";
 import ScrollToTop from "./components/ScrollToTop";
@@ -57,10 +57,7 @@ const App = () => {
                         path="/portfolio/certificates"
                         element={<CertificatesPage />}
                     />
-                    <Route
-                        path="/portfolio/achievements"
-                        element={<AchievementsPage />}
-                    />
+                    <Route path="/portfolio/icpc" element={<IcpcPage />} />
                     <Route
                         path="/portfolio/fun-facts"
                         element={<FunFactsPage />}

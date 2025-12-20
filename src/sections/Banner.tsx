@@ -11,15 +11,14 @@ import ContactInfo from "../components/ContactInfo";
 
 const Banner = () => {
     const { theme } = useTheme();
-    const [workResumeLoading, setWorkResumeLoading] = useState(false);
-    const [academicResumeLoading, setAcademicResumeLoading] = useState(false);
+    const [resumeLoading, setResumeLoading] = useState(false);
 
-    const handleWorkResumeDownload = async () => {
-        setWorkResumeLoading(true);
+    const handleResumeDownload = async () => {
+        setResumeLoading(true);
         try {
             const link = document.createElement("a");
             link.href =
-                "https://drive.google.com/uc?export=download&id=1QOM4HqTqZnavK1lHb-5KuryF0Dkbs8qz";
+                "https://drive.google.com/uc?export=download&id=1u8_DC44-4r9zbnNJQd7nvNl8NqxMrVuz";
             link.download = "Nagham_Qarqamaz_Work_Resume.pdf";
             document.body.appendChild(link);
             link.click();
@@ -27,40 +26,16 @@ const Banner = () => {
         } catch (error) {
             console.error("Error downloading work resume:", error);
         } finally {
-            setTimeout(() => setWorkResumeLoading(false), 2000);
-        }
-    };
-
-    const handleAcademicResumeDownload = async () => {
-        setAcademicResumeLoading(true);
-        try {
-            const link = document.createElement("a");
-            link.href =
-                "https://drive.google.com/uc?export=download&id=1bO2rd1XlYVw9N8qWu65raHbbI_xQE64N";
-            link.download = "Nagham_Qarqamaz_Academic_Resume.pdf";
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        } catch (error) {
-            console.error("Error downloading academic resume:", error);
-        } finally {
-            setTimeout(() => setAcademicResumeLoading(false), 2000);
+            setTimeout(() => setResumeLoading(false), 2000);
         }
     };
 
     const resumeButtons = (
         <div className="flex flex-col lg:flex-row gap-4 mt-8">
             <Button
-                text="Download Professional Resume"
-                onClick={handleWorkResumeDownload}
-                loading={workResumeLoading}
-                loadingText="Downloading..."
-                fixedWidth={true}
-            />
-            <Button
-                text="Download Academic Resume"
-                onClick={handleAcademicResumeDownload}
-                loading={academicResumeLoading}
+                text="Download Resume"
+                onClick={handleResumeDownload}
+                loading={resumeLoading}
                 loadingText="Downloading..."
                 fixedWidth={true}
             />

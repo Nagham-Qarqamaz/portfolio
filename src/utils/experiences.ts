@@ -1,8 +1,8 @@
 export const experiences = [
     {
-        title: "Freelance Web Developer",
+        title: "Senior Front-End Developer",
         date: "11/2024 – 07/2025",
-        location: "Anon, Serbia (Remote)",
+        location: "Surge, Boston, USA (Remote)",
         bulletPoints: [
             "Built a full-scale bilingual Next.js website with modern UI/UX and responsive design, delivering 20+ pages within 1 month.",
             "Updated a production Shopify project with 6,100+ customers, learning Liquid and integrating multiple third-party APIs.",
@@ -10,7 +10,17 @@ export const experiences = [
         className: "",
     },
     {
-        title: "Freelance Web Developer",
+        title: "Web Developer",
+        date: "11/2024 – 07/2025",
+        location: "Anon, Belgrade, Serbia (Remote)",
+        bulletPoints: [
+            "Built a full-scale bilingual Next.js website with modern UI/UX and responsive design, delivering 20+ pages within 1 month.",
+            "Updated a production Shopify project with 6,100+ customers, learning Liquid and integrating multiple third-party APIs.",
+        ],
+        className: "mt-72 lg:mt-56",
+    },
+    {
+        title: "Web Developer",
         date: "08/2024 – 01/2025",
         location: "Eyes360, Cairo, Egypt (Remote)",
         bulletPoints: [
@@ -18,7 +28,7 @@ export const experiences = [
             "Built sunglasses try-on system: face tracking and 3D model positioning/rotation using Babylon.js.",
             "Created watch try-on feature: hand tracking with Google Landmarks for accurate model positioning.",
         ],
-        className: "mt-64 lg:mt-48",
+        className: "mt-52 lg:mt-48",
     },
     {
         title: "Front-End Web Developer",
@@ -29,7 +39,7 @@ export const experiences = [
             "Integrated 30+ RESTful APIs to connect frontend with backend systems.",
             "Led frontend components for client-facing dashboards and e-commerce features across 20+ interactive pages.",
         ],
-        className: "mt-64 lg:mt-56 2xl:mt-48",
+        className: "mt-64 lg:mt-52",
     },
     {
         title: "Full-Stack Web Developer",
@@ -41,19 +51,6 @@ export const experiences = [
             "Contributed to 5+ WordPress websites, including full custom theme development.",
             "Gained extensive experience working onsite in a highly collaborative 15-member team for a Dubai-based company.",
         ],
-        className: "mt-48 lg:mt-56 xl:mt-48",
-    },
-    {
-        title: "ICPC Contestant - Problem Setter - Coach",
-        date: "2018 – 2021",
-        location: "",
-        bulletPoints: [
-            "Regional Contestant in ACPC 2021.",
-            "Silver medal in the SCPC 2021.",
-            "Golden medal in the Girls ACPC 2020.",
-            "Problem Setter at SCPC 2020.",
-            "Expert rank on Codeforces website.",
-        ],
-        className: "mt-[16rem] xl:mt-64 2xl:mt-56",
+        className: "mt-60 lg:mt-40",
     },
 ];

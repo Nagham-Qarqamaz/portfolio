@@ -7,107 +7,125 @@ import ThemedInnerContainer from "../components/ThemedInnerContainer";
 function Certificates() {
     return (
         <Section glow={false} title="Certificates">
-            <FadeIn>
-                <ThemedContainer className="mb-16">
-                    <div>
-                        <div className="text-3xl font-semibold mb-6">
-                            International Collegiate Programming Contest
-                            Certificates
+            <div className="space-y-16">
+                <FadeIn>
+                    <ThemedContainer>
+                        <div>
+                            <div className="text-3xl font-semibold mb-6">
+                                International English Language Testing System
+                                (IELTS)
+                            </div>
+                            <div className="hidden sm:grid justify-self-center sm:grid-cols-1 gap-4">
+                                {languageCertificates}
+                            </div>
+                            <div className="sm:hidden flex flex-wrap justify-center gap-4">
+                                {languageCertificates}
+                            </div>
                         </div>
-                        <div className="flex flex-col gap-12">
-                            <div className="flex flex-col lg:flex-row lg:justify-between gap-12">
+                    </ThemedContainer>
+                </FadeIn>
+                <FadeIn>
+                    <ThemedContainer>
+                        <div>
+                            <div className="text-3xl font-semibold mb-6">
+                                International Collegiate Programming Contest
+                                Certificates
+                            </div>
+                            <div className="flex flex-col gap-12">
+                                <div className="flex flex-col lg:flex-row lg:justify-between gap-12">
+                                    <ThemedInnerContainer>
+                                        <div className="text-lg font-semibold mb-6">
+                                            The 2018 International Collegiate
+                                            Programming Contest
+                                        </div>
+                                        <div className="flex flex-wrap justify-center gap-4">
+                                            {icpc2018}
+                                        </div>
+                                    </ThemedInnerContainer>
+                                    <ThemedInnerContainer>
+                                        <div className="text-lg font-semibold mb-6">
+                                            The 2019 International Collegiate
+                                            Programming Contest
+                                        </div>
+                                        <div className="flex flex-wrap justify-center gap-4">
+                                            {icpc2019}
+                                        </div>
+                                    </ThemedInnerContainer>
+                                </div>
                                 <ThemedInnerContainer>
                                     <div className="text-lg font-semibold mb-6">
-                                        The 2018 International Collegiate
-                                        Programming Contest
+                                        The 2020 Africa and Arab Collegiate
+                                        Programming Contest for GIRLS
                                     </div>
-                                    <div className="flex flex-wrap justify-center gap-4">
-                                        {icpc2018}
+                                    <div className="hidden sm:grid justify-self-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+                                        {girlsACPC2020}
+                                    </div>
+                                    <div className="sm:hidden flex flex-wrap justify-center gap-4">
+                                        {girlsACPC2020}
                                     </div>
                                 </ThemedInnerContainer>
                                 <ThemedInnerContainer>
                                     <div className="text-lg font-semibold mb-6">
-                                        The 2019 International Collegiate
+                                        The 2021 International Collegiate
                                         Programming Contest
                                     </div>
-                                    <div className="flex flex-wrap justify-center gap-4">
-                                        {icpc2019}
+                                    <div className="hidden sm:grid justify-self-center sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                        {icpc2022}
+                                    </div>
+                                    <div className="sm:hidden flex flex-wrap justify-center gap-4">
+                                        {icpc2022}
                                     </div>
                                 </ThemedInnerContainer>
                             </div>
-                            <ThemedInnerContainer>
-                                <div className="text-lg font-semibold mb-6">
-                                    The 2020 Africa and Arab Collegiate
-                                    Programming Contest for GIRLS
-                                </div>
-                                <div className="hidden sm:grid justify-self-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-                                    {girlsACPC2020}
-                                </div>
-                                <div className="sm:hidden flex flex-wrap justify-center gap-4">
-                                    {girlsACPC2020}
-                                </div>
-                            </ThemedInnerContainer>
-                            <ThemedInnerContainer>
-                                <div className="text-lg font-semibold mb-6">
-                                    The 2021 International Collegiate
-                                    Programming Contest
-                                </div>
-                                <div className="hidden sm:grid justify-self-center sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                                    {icpc2022}
-                                </div>
-                                <div className="sm:hidden flex flex-wrap justify-center gap-4">
-                                    {icpc2022}
-                                </div>
-                            </ThemedInnerContainer>
                         </div>
-                    </div>
-                </ThemedContainer>
-            </FadeIn>
-            <FadeIn>
-                <ThemedContainer>
-                    <div>
-                        <div className="text-3xl font-semibold mb-6">
-                            Academic Outstanding Certificates
+                    </ThemedContainer>
+                </FadeIn>
+                <FadeIn>
+                    <ThemedContainer>
+                        <div>
+                            <div className="text-3xl font-semibold mb-6">
+                                Academic Outstanding Certificates
+                            </div>
+                            <div className="hidden sm:grid justify-self-center sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
+                                {academicExcellenceCertificates}
+                            </div>
+                            <div className="sm:hidden flex flex-wrap justify-center gap-4">
+                                {academicExcellenceCertificates}
+                            </div>
                         </div>
-                        <div className="hidden sm:grid justify-self-center sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
-                            {academicExcellenceCertificates}
+                    </ThemedContainer>
+                </FadeIn>
+                <FadeIn>
+                    <ThemedContainer>
+                        <div>
+                            <div className="text-3xl font-semibold mb-6">
+                                University Certificates
+                            </div>
+                            <div className="hidden sm:grid justify-self-center sm:grid-cols-2 md:grid-cols-3 gap-4">
+                                {universityCertificates}
+                            </div>
+                            <div className="sm:hidden flex flex-wrap justify-center gap-4">
+                                {universityCertificates}
+                            </div>
                         </div>
-                        <div className="sm:hidden flex flex-wrap justify-center gap-4">
-                            {academicExcellenceCertificates}
+                    </ThemedContainer>
+                </FadeIn>
+                <FadeIn>
+                    <ThemedContainer>
+                        <div>
+                            <div className="text-3xl font-semibold mb-6">
+                                High School Certificates
+                            </div>
+                            <div className="hidden sm:grid justify-self-center sm:grid-cols-2 gap-4">
+                                {highSchoolCertificates}
+                            </div>
+                            <div className="sm:hidden flex flex-wrap justify-center gap-4">
+                                {highSchoolCertificates}
+                            </div>
                         </div>
-                    </div>
-                </ThemedContainer>
-            </FadeIn>
-            <FadeIn>
-                <ThemedContainer className="mt-16">
-                    <div>
-                        <div className="text-3xl font-semibold mb-6">
-                            University Certificates
-                        </div>
-                        <div className="hidden sm:grid justify-self-center sm:grid-cols-2 md:grid-cols-3 gap-4">
-                            {universityCertificates}
-                        </div>
-                        <div className="sm:hidden flex flex-wrap justify-center gap-4">
-                            {universityCertificates}
-                        </div>
-                    </div>
-                </ThemedContainer>
-            </FadeIn>
-            <FadeIn>
-                <ThemedContainer className="mt-16">
-                    <div>
-                        <div className="text-3xl font-semibold mb-6">
-                            High School Certificates
-                        </div>
-                        <div className="hidden sm:grid justify-self-center sm:grid-cols-2 gap-4">
-                            {highSchoolCertificates}
-                        </div>
-                        <div className="sm:hidden flex flex-wrap justify-center gap-4">
-                            {highSchoolCertificates}
-                        </div>
-                    </div>
-                </ThemedContainer>
-            </FadeIn>
+                    </ThemedContainer>
+                </FadeIn>
+            </div>
         </Section>
     );
 }
@@ -241,6 +259,15 @@ const highSchoolCertificates = (
         <PdfCard
             src="https://drive.google.com/file/d/1UkuT0vAQ14xYKFGcmwBpFMJU3MNQ2o1G/view?usp=drive_link"
             title="General High School Certificate"
+        />
+    </>
+);
+
+const languageCertificates = (
+    <>
+        <PdfCard
+            src="https://drive.google.com/file/d/1jnZlaxyqg4_9l8pHE78WWs4QJDBMRJii/view?usp=drive_link"
+            title="IELTS"
         />
     </>
 );

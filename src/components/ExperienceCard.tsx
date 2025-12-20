@@ -32,9 +32,11 @@ function ExperienceCard({
             <ul className="list-disc list-inside mt-2 space-y-1 text-left">
                 {bulletPoints.map((bulletPoint, index) => {
                     return (
-                        <li key={index} className="custom-bullet">
-                            {bulletPoint}
-                        </li>
+                        <li
+                            key={index}
+                            className="custom-bullet"
+                            dangerouslySetInnerHTML={{ __html: bulletPoint }}
+                        />
                     );
                 })}
             </ul>

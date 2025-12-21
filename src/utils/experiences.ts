@@ -4,8 +4,8 @@ export const experiences = [
         date: "11/2024 – 07/2025",
         location: "Surge | Boston, USA (Remote)",
         bulletPoints: [
-            "Built a full-scale bilingual Next.js website with modern UI/UX and responsive design, delivering 20+ pages within 1 month.",
-            "Updated a production Shopify project with 6,100+ customers, learning Liquid and integrating multiple third-party APIs.",
+            "Refactor and enhance a Next.js frontend for Surge, an automated trading platform on the Cardano blockchain, with a focus on performance, scalability, and maintainability.",
+            "Design and implement new UI components and features, contributing to ongoing product improvements and frontend architecture updates.",
         ],
         className: "",
     },

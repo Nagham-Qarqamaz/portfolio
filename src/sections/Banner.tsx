@@ -18,7 +18,7 @@ const Banner = () => {
         try {
             const link = document.createElement("a");
             link.href =
-                "https://drive.google.com/uc?export=download&id=1u8_DC44-4r9zbnNJQd7nvNl8NqxMrVuz";
+                "https://drive.google.com/uc?export=download&id=1y28hFL12G0CY4RWtNMtOrWqFDVZqoLSp";
             link.download = "Nagham_Qarqamaz_Work_Resume.pdf";
             document.body.appendChild(link);
             link.click();

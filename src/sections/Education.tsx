@@ -8,7 +8,8 @@ import { useTheme } from "../contexts/ThemeContext";
 import UniversityEducation from "../components/UniversityEducation";
 import UniversityProjects from "../components/UniversityProjects";
 import HighSchoolEducation from "../components/HighSchoolEducation";
-import ThemedContainer from "../components/ThemedContainer";
+import AccordionCard from "../components/AccordionCard";
+import AccordionContainer from "../components/AccordionContainer";
 
 const Education = () => {
     const navigate = useNavigate();
@@ -16,11 +17,8 @@ const Education = () => {
 
     return (
         <Section glow={false} title="Education">
-            <div className="flex flex-col gap-8">
-                <ThemedContainer>
-                    <div className="text-3xl font-semibold mb-6">
-                        Educational Certificates
-                    </div>
+            <AccordionContainer>
+                <AccordionCard title="Educational Certificates">
                     <SimpleCard hoverEffect={false}>
                         <div className="text-center p-2">
                             <p className="text-lg mb-4">
@@ -41,12 +39,9 @@ const Education = () => {
                             />
                         </div>
                     </SimpleCard>
-                </ThemedContainer>
+                </AccordionCard>
 
-                <ThemedContainer>
-                    <div className="text-3xl font-semibold mb-6">
-                        University Education
-                    </div>
+                <AccordionCard title="University Education">
                     <div className="space-y-12">
                         <UniversityEducation />
                         <UniversityProjects theme={theme} />
@@ -54,20 +49,17 @@ const Education = () => {
                             <UniversityTranscript />
                         </SimpleCard>
                     </div>
-                </ThemedContainer>
+                </AccordionCard>
 
-                <ThemedContainer>
-                    <div className="text-3xl font-semibold mb-6">
-                        Secondary School Education
-                    </div>
+                <AccordionCard title="Secondary School Education">
                     <div className="space-y-12">
                         <HighSchoolEducation />
                         <SimpleCard hoverEffect={false}>
                             <HighschoolTranscript />
                         </SimpleCard>
                     </div>
-                </ThemedContainer>
-            </div>
+                </AccordionCard>
+            </AccordionContainer>
         </Section>
     );
 };
